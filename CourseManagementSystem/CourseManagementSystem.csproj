@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -210,6 +211,23 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ClassManage.css" />
+    <Content Include="Content\FixedRollStartCallUI.css" />
+    <Content Include="Content\GroupInfoUI2.css" />
+    <Content Include="Content\images\user.png" />
+    <Content Include="Content\images\users.png" />
+    <Content Include="Content\images\加号.png" />
+    <Content Include="Content\images\地点.png" />
+    <Content Include="Content\images\日期.png" />
+    <Content Include="Content\images\曲别针.png" />
+    <Content Include="Content\images\班级.png" />
+    <Content Include="Content\images\红叉.png" />
+    <Content Include="Content\images\老师.png" />
+    <Content Include="Content\images\蓝色板.png" />
+    <Content Include="Content\images\邮箱.png" />
+    <Content Include="Content\images\闹钟.png" />
+    <Content Include="Content\RollCallListUI.css" />
+    <Content Include="Content\StudentRollCallUI.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
