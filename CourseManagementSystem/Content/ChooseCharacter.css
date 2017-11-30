@@ -1,0 +1,80 @@
+/* ChooseCharater.wxss */
+/*上方的风景模块*/
+.body{
+	width:100%;
+}
+.topBoardView
+{
+
+    width: 100%;
+    height: 250px;
+}
+.topIcon
+{
+  position:absolute;
+  left:40px;
+  top:40px;
+  width:55px;
+}
+/*上面的灯*/
+.topLight
+{
+  position:absolute;
+  left:40px;
+  top:40px;
+  width:55px;
+}
+/*上面的线*/
+.topLine
+{
+  position:absolute;
+  width:70%;
+  left: 40px;
+  top:12%;
+  border-bottom:2px #212121 solid;
+}
+/*上面的提示框*/
+.topTips
+{
+  font-weight:bold;
+  position:absolute;
+  font-size: 18px;
+  left: 100px;
+  top:60px;
+  z-index: 2;
+  
+}
+/*下方的主要选择页面*/
+.mainView
+{
+	
+  background-color: #6cf;
+  width:100%;
+  height:500px;
+  text-align:center;
+}
+/*选择老师的按钮*/
+.teacherButton
+{
+  width:50%;
+  height:65px;
+  font-size: 25px;
+  margin-top:20%;
+  background-color:white;
+  left: 4%;
+  border-radius: 15px;
+  border:1px #EEEEEE solid;
+}
+ /*选择同学的按钮*/
+.studentButton
+{
+  margin-top:20%;
+  width:50%;
+  height:65px;
+  font-size: 25px;
+  top:30%;
+  background-color:white;
+  left: 4%;
+  border-radius: 15px;
+  border:1px #EEEEEE solid;
+}
