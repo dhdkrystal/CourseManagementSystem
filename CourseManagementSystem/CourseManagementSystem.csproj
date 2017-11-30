@@ -203,6 +203,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\CourseManagementSystem.mdf" />
+    <Content Include="App_Data\CourseManagementSystem_log.ldf">
+      <DependentUpon>CourseManagementSystem.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\base.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -291,7 +295,9 @@
     <None Include="Views\Home\RegisterUI.cshtml" />
     <None Include="Views\Home\StudentBindingUI.cshtml" />
     <None Include="Views\Home\TeacherBindingUI.cshtml" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -308,7 +314,6 @@
     <Content Include="Views\SeminarRandomGroupNoSelection.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Manage\" />
     <Folder Include="Views\Shared\" />
