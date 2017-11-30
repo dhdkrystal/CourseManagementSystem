@@ -240,11 +240,9 @@
     <Content Include="Content\RegisterUI.css" />
     <Content Include="Content\RollCallListUI.css" />
     <Content Include="Content\StudentBindingUI.css" />
-    <Content Include="Content\StudentBindingUI2.css" />
     <Content Include="Content\StudentRollCallUI.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\TeacherBindingUI.css" />
-    <Content Include="Content\TeacherBindingUI2.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
