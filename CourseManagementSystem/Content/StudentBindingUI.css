@@ -1,52 +1,57 @@
 /* StudentBindingUI.css */
 /*上方的风景模块*/
+.body{
+	width:100%;
+}
 .topBoardView
 {
+
     width: 100%;
-    height: 150px;
+    height: 250px;
 }
 .topIcon
 {
   position:absolute;
-  width:100%;
-  height:150px;
-  z-index:1;
+  left:40px;
+  top:40px;
+  width:55px;
 }
 /*上面的灯*/
 .topLight
 {
-  position: absolute;
-  height: 8%;
-  width: 12%;
-  margin-left: 5%;
-  margin-top:5%;
-  z-index: 2;
+  position:absolute;
+  left:40px;
+  top:40px;
+  width:55px;
 }
 /*上面的线*/
 .topLine
 {
   position:absolute;
-  width:60%;
-  height: 1%;
-  left: 8%;
+  width:70%;
+  left: 40px;
   top:12%;
-  z-index: 2;
+  border-bottom:2px #212121 solid;
 }
 /*上面的提示框*/
 .topTips
 {
+  font-weight:bold;
   position:absolute;
-  font-size: 15px;
-  margin-left: 20%;
-  margin-top:10%;
+  font-size: 18px;
+  left: 100px;
+  top:60px;
   z-index: 2;
+  
 }
 /*下方的主要选择页面*/
 .mainView
 {
+	
   background-color: #6cf;
   width:100%;
-  height: 500px;
+  height:500px;
+  text-align:center;
 }
 /*教工号的标签*/
 .studentID
@@ -86,7 +91,6 @@
   left:39%;
   top:38%;
   z-index:2;
-  border-radius: 10px;
 }
 /*姓名输入框*/
 .inputName
@@ -99,7 +103,6 @@
   left:39%;
   top:52%;
   z-index:2;
-  border-radius: 10px;
 }
 /*学校输入框*/
 .inputSchool
@@ -112,15 +115,19 @@
   left:39%;
   top:62%;
   z-index:2;
-  border-radius: 10px;
 }
 /*确定按钮*/
 .confirmButton
 {
-  width:140px;
+  position:absolute;
+  width:40%;
   height:60px;
+  left:30%;
   font-size: 25px;
-  top:62%;
+  top:75%;
+  border-radius:15px;
+  background-color:white;
+  border:1px #EEE solid;
 }
 /*提示图标*/
 .tipIcon
@@ -147,9 +154,9 @@
 {
   position:absolute;
   background: #fff;
-  width: 45px;
-  height: 45px;
-  left:64%;
-  top:62%;
+  width: 38px;
+  height: 38px;
+  left:61%;
+  top:63%;
   z-index:2;
 }
