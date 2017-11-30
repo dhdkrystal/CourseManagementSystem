@@ -1,0 +1,191 @@
+/* CSS Document */
+
+.body{
+	width:100%;
+	height: 100%;
+	overflow-x: hidden;
+  	overflow-y: auto;
+}
+.fullbackground
+{
+	background-color: #66CCFF
+}
+/*课程信息文字和图标的容器*/
+.infoBlock
+{
+	width:80%;
+	height:10%;
+	margin-top: 10%;
+	margin-left:20%;
+	font-size:3vw;
+}
+/*课程信息的图标*/
+.infoIcon
+{
+	width:8%;
+	height:100%;
+	margin-right: 10%;
+}
+/*标题蓝色方块*/
+.head20
+{
+	position: relative;
+	width:100%;
+	height:50%;
+	background-color: #66CCFF;
+	margin-bottom: 3%;
+	padding-bottom:15%;
+}
+/*课程OOAD字体*/
+.FONT1
+{
+	font-size: 6vw;
+	position:absolute;
+	color: #FFFFFF;
+	margin-top: 3%;
+	width: 100%;
+	text-align: center;
+}
+
+.FONT11
+{
+	font-size: 6vw;
+	color: #FFFFFF;
+	height: 10px;
+	margin-left: 10%;
+	margin-top: 25px
+}
+/*讨论课4字体*/
+.FONT12
+{
+	font-size: 6vw;
+	position:absolute;
+	color: #FFFFFF;
+	height: 10px;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+/*讨论课时间等信息字体*/
+.FONT2
+{
+	font-size: 3vw;
+	position:absolute;
+	color: #FFFFFF;
+	margin-left: 63%;
+	margin-top: 8%;
+	text-align: center;
+}
+/*打分，签到，组队字体*/
+.FONT21
+{
+	font-size: 3vw;
+	position: absolute;
+	color: #FFFFFF;
+	margin-top: 45%;
+	width: 100%;
+	text-align: center;
+}
+/*抵补提示讨论课信息字体*/
+.FONT7{
+  font-size: 2vw;
+  position: absolute;
+  color: #CCCCCC;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+  text-align: center;
+}
+/*点击可查看课程信息的9点图标*/
+.nineIcon {
+  height: 80%;
+  width: 10%;
+  float: right;
+  padding-top: 7%;
+  padding-right: 2%;
+}
+/*组队和选题，签到的蓝色方块*/
+.box1
+{
+	position: relative;
+	float: left;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color:#66CCFF;
+	margin-top: 5%;
+	width: 40%;
+	padding-bottom: 40%;
+	border-radius: 15px;
+	
+}
+/*组队和选题、签到的灰色方块*/
+.box11
+{
+	position: relative;
+	float: left;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color:#CCCCCC;
+	margin-top: 5%;
+	width: 40%;
+	padding-bottom: 40%;
+	border-radius: 15px;
+	
+}
+/*打分的蓝色方块*/
+.box2
+{
+	position:relative;
+	float: right;
+	margin-right: 5%;
+	background-color:#66CCFF;
+	margin-top: 5%;
+	width: 40%;
+	padding-bottom: 85%;
+	border-radius: 15px;
+}
+/*打分的灰色方块*/
+.box21
+{
+	position:relative;
+	float: right;
+	margin-right: 5%;
+	background-color:#CCCCCC;
+	margin-top: 5%;
+	width: 40%;
+	padding-bottom: 85%;
+	border-radius: 15px;
+}
+/*讨论课蓝色方块*/
+.box3{
+	position:relative;
+	margin-left: 5%;
+	width: 90%;
+	background-color:#66CCFF;
+	margin-top: 5%;
+	padding-bottom: 25%;
+    border-radius: 15px;
+	
+}
+/*讨论课灰色方块*/
+.box4{
+	position:relative;
+	margin-left: 5%;
+	width: 90%;
+	background-color:#CCCCCC;
+	margin-top: 5%;
+	padding-bottom: 25%;
+    border-radius: 15px;
+	
+}
+/*讨论课底部提示信息的方块*/
+.box9{
+	height:15%;
+	width:80%;
+	float: left;
+	color: black;
+ 	font-size: 3vw;
+ 	margin-top: 3%;
+ 	margin-bottom: 3%;
+ 	padding-bottom: 2%;
+}
+

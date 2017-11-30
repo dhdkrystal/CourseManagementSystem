@@ -210,18 +210,27 @@
     <Content Include="Content\ChooseCharacter.css" />
     <Content Include="Content\ClassManage.css" />
     <Content Include="Content\columns.css" />
+    <Content Include="Content\CourseUI.css" />
     <Content Include="Content\CreateSchoolUI.css" />
     <Content Include="Content\FixedRollStartCallUI.css" />
+    <Content Include="Content\fixgroup.css" />
+    <Content Include="Content\fixGroupChooseTopicUI2.css" />
     <Content Include="Content\font.css" />
     <Content Include="Content\forms.css" />
     <Content Include="Content\GroupInfoUI2.css" />
+    <Content Include="Content\images\email.png" />
     <Content Include="Content\images\head-background.jpg" />
+    <Content Include="Content\images\nine.png" />
     <Content Include="Content\images\select.png" />
+    <Content Include="Content\images\smile.png" />
+    <Content Include="Content\images\user.png" />
     <Content Include="Content\images\user.svg" />
     <Content Include="Content\images\users.png" />
+    <Content Include="Content\images\九点.png" />
     <Content Include="Content\images\加号.png" />
     <Content Include="Content\images\地点.png" />
     <Content Include="Content\images\提示.png" />
+    <Content Include="Content\images\文件资料.png" />
     <Content Include="Content\images\日期.png" />
     <Content Include="Content\images\曲别针.png" />
     <Content Include="Content\images\灯.png" />
@@ -254,6 +263,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -266,6 +276,13 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\CourseInfoUI.cshtml" />
+    <Content Include="Views\CourseUI.cshtml" />
+    <Content Include="Views\FixedGroupChooseTopicUI2.cshtml" />
+    <Content Include="Views\FixedGroupLeaderUI.cshtml" />
+    <Content Include="Views\FixedGroupLeaderUI2.cshtml" />
+    <Content Include="Views\FixedGroupMemberUI2.cshtml" />
+    <Content Include="Views\FixedGroupNoLeaderUI2.cshtml" />
     <None Include="Views\Home\CheckStudentInfoUI.cshtml" />
     <None Include="Views\Home\CheckTeacherInfoUI .cshtml" />
     <None Include="Views\Home\ChooseCharater.cshtml" />
@@ -287,6 +304,8 @@
     <Content Include="Views\Home\Teacher_MainUI.cshtml" />
     <Content Include="Views\Home\Student_MainUI.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\SeminarFixedGroupNoSelection.cshtml" />
+    <Content Include="Views\SeminarRandomGroupNoSelection.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
