@@ -296,12 +296,12 @@
     <Content Include="Views\FixedGroupNoLeaderUI2.cshtml" />
     <None Include="Views\Home\CheckStudentInfoUI.cshtml" />
     <None Include="Views\Home\CheckTeacherInfoUI .cshtml" />
-    <None Include="Views\Home\ChooseCharater.cshtml" />
-    <None Include="Views\Home\CreateSchoolUI.cshtml" />
-    <None Include="Views\Home\LoginUI.cshtml" />
-    <None Include="Views\Home\RegisterUI.cshtml" />
-    <None Include="Views\Home\StudentBindingUI.cshtml" />
-    <None Include="Views\Home\TeacherBindingUI.cshtml" />
+    <None Include="Views\Account\ChooseCharater.cshtml" />
+    <None Include="Views\Account\CreateSchoolUI.cshtml" />
+    <None Include="Views\Account\LoginUI.cshtml" />
+    <None Include="Views\Account\RegisterUI.cshtml" />
+    <None Include="Views\Account\StudentBindingUI.cshtml" />
+    <None Include="Views\Account\TeacherBindingUI.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -312,11 +312,8 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Account\ChooseCharacter.cshtml" />
-    <None Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Home\Teacher_MainUI.cshtml" />
     <Content Include="Views\Home\Student_MainUI.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\SeminarFixedGroupNoSelection.cshtml" />
     <Content Include="Views\SeminarRandomGroupNoSelection.cshtml" />
     <Content Include="Views\Seminar\Seminar.cshtml" />
@@ -335,7 +332,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Manage\" />
+    <Folder Include="Views\Class\" />
+    <Folder Include="Views\Course\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
