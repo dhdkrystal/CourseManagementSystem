@@ -2,12 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\CourseManagementSystem",
-    "\\CourseManagementSystem\\Content\\images",
     "\\CourseManagementSystem\\fonts",
     "\\CourseManagementSystem\\Views",
-    "\\CourseManagementSystem\\Views\\Account",
-    "\\packages"
+    "\\CourseManagementSystem\\Views\\Account"
   ],
-  "SelectedNode": "\\CourseManagementSystem\\Views\\FixedGroupLeaderUI2.cshtml",
+  "SelectedNode": "\\CourseManagementSystem\\Controllers",
   "PreviewInSolutionExplorer": false
 }
