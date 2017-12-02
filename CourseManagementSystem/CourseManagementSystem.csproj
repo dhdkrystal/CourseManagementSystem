@@ -301,13 +301,13 @@
     <Content Include="Views\FixedGroupLeaderUI2.cshtml" />
     <Content Include="Views\FixedGroupMemberUI2.cshtml" />
     <Content Include="Views\FixedGroupNoLeaderUI2.cshtml" />
-    <Content Include="Views\Account\ChooseSchool.cshtml" />
-    <Content Include="Views\Account\ChooseSchool1.cshtml" />
-    <Content Include="Views\Account\ChooseSchool2.cshtml" />
+    <Content Include="Views\School\ChooseSchool.cshtml" />
+    <Content Include="Views\School\ChooseSchool1.cshtml" />
+    <Content Include="Views\School\ChooseSchool2.cshtml" />
     <None Include="Views\Home\CheckStudentInfoUI.cshtml" />
     <None Include="Views\Home\CheckTeacherInfoUI .cshtml" />
     <None Include="Views\Account\ChooseCharater.cshtml" />
-    <None Include="Views\Account\CreateSchoolUI.cshtml" />
+    <None Include="Views\School\CreateSchoolUI.cshtml" />
     <None Include="Views\Account\LoginUI.cshtml" />
     <None Include="Views\Account\RegisterUI.cshtml" />
     <None Include="Views\Account\StudentBindingUI.cshtml" />
@@ -343,7 +343,6 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Views\Class\" />
-    <Folder Include="Views\School\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
