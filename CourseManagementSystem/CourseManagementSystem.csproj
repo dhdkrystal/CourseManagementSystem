@@ -196,13 +196,21 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ClassController.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SchoolController.cs" />
+    <Compile Include="Controllers\SeminarController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\CourseManagementSystem.mdf" />
+    <Content Include="App_Data\CourseManagementSystem_log.ldf">
+      <DependentUpon>CourseManagementSystem.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\base.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -217,9 +225,13 @@
     <Content Include="Content\fixGroupChooseTopicUI2.css" />
     <Content Include="Content\font.css" />
     <Content Include="Content\forms.css" />
+    <Content Include="Content\GradePresentationUI.css" />
     <Content Include="Content\GroupInfoUI2.css" />
+    <Content Include="Content\images\deng.png" />
     <Content Include="Content\images\email.png" />
     <Content Include="Content\images\head-background.jpg" />
+    <Content Include="Content\images\heart_chosen.png" />
+    <Content Include="Content\images\heart_empty.png" />
     <Content Include="Content\images\nine.png" />
     <Content Include="Content\images\select.png" />
     <Content Include="Content\images\smile.png" />
@@ -239,21 +251,26 @@
     <Content Include="Content\images\红叉.png" />
     <Content Include="Content\images\线.png" />
     <Content Include="Content\images\老师.png" />
+    <Content Include="Content\images\背景图2.jpg" />
     <Content Include="Content\images\蓝色板.png" />
     <Content Include="Content\images\邮箱.png" />
     <Content Include="Content\images\闹钟.png" />
     <Content Include="Content\layout.css" />
     <Content Include="Content\LoginUI.css" />
     <Content Include="Content\main.css" />
+    <Content Include="Content\RandomGroupChooseTopicUI2.css" />
+    <Content Include="Content\RandomGroupLeaderUI.css" />
     <Content Include="Content\Register.css" />
     <Content Include="Content\RegisterUI.css" />
     <Content Include="Content\RollCallListUI.css" />
+    <Content Include="Content\Seminar.css" />
     <Content Include="Content\StudentBindingUI.css" />
     <Content Include="Content\StudentBindingUI2.css" />
     <Content Include="Content\StudentRollCallUI.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\TeacherBindingUI.css" />
     <Content Include="Content\TeacherBindingUI2.css" />
+    <Content Include="Content\test.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -268,6 +285,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.11.3.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -276,22 +294,39 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\CourseInfoUI.cshtml" />
-    <Content Include="Views\CourseUI.cshtml" />
-    <Content Include="Views\FixedGroupChooseTopicUI2.cshtml" />
-    <Content Include="Views\FixedGroupLeaderUI.cshtml" />
-    <Content Include="Views\FixedGroupLeaderUI2.cshtml" />
-    <Content Include="Views\FixedGroupMemberUI2.cshtml" />
-    <Content Include="Views\FixedGroupNoLeaderUI2.cshtml" />
+    <Content Include="Views\Course\CourseInfoUI.cshtml" />
+    <Content Include="Views\Course\CourseUI.cshtml" />
+    <Content Include="Views\Seminar\FixedGroupChooseTopicUI2.cshtml" />
+    <Content Include="Views\Seminar\FixedGroupLeaderUI.cshtml" />
+    <Content Include="Views\Seminar\FixedGroupLeaderUI2.cshtml" />
+    <Content Include="Views\Seminar\FixedGroupMemberUI2.cshtml" />
+    <Content Include="Views\Seminar\FixedGroupNoLeaderUI2.cshtml" />
+    <Content Include="Views\School\ChooseSchool.cshtml" />
+    <Content Include="Views\School\ChooseSchool1.cshtml" />
+    <Content Include="Views\School\ChooseSchool2.cshtml" />
+    <Content Include="Views\Class\ClassManage.cshtml" />
+    <Content Include="Views\Class\FixedEndRollCallUI.cshtml" />
+    <Content Include="Views\Class\FixedGroupInfoUI.cshtml" />
+    <Content Include="Views\Class\FixedRollCallEndUI1.cshtml" />
+    <Content Include="Views\Class\FixedRollCallUI.cshtml" />
+    <Content Include="Views\Class\FixedRollStartCallUI.cshtml" />
+    <Content Include="Views\Class\GroupInfoUI.cshtml" />
+    <Content Include="Views\Class\GroupInfoUI2.cshtml" />
+    <Content Include="Views\Class\RandomEndRollCallUI.cshtml" />
+    <Content Include="Views\Class\RandomRollCallUI.cshtml" />
+    <Content Include="Views\Class\RandomRollStartCallUI.cshtml" />
+    <Content Include="Views\Class\RollCallListUI.cshtml" />
     <None Include="Views\Home\CheckStudentInfoUI.cshtml" />
     <None Include="Views\Home\CheckTeacherInfoUI .cshtml" />
-    <None Include="Views\Home\ChooseCharater.cshtml" />
-    <None Include="Views\Home\CreateSchoolUI.cshtml" />
-    <None Include="Views\Home\LoginUI.cshtml" />
-    <None Include="Views\Home\RegisterUI.cshtml" />
-    <None Include="Views\Home\StudentBindingUI.cshtml" />
-    <None Include="Views\Home\TeacherBindingUI.cshtml" />
-    <Content Include="Web.config" />
+    <None Include="Views\Account\ChooseCharater.cshtml" />
+    <None Include="Views\School\CreateSchoolUI.cshtml" />
+    <None Include="Views\Account\LoginUI.cshtml" />
+    <None Include="Views\Account\RegisterUI.cshtml" />
+    <None Include="Views\Account\StudentBindingUI.cshtml" />
+    <None Include="Views\Account\TeacherBindingUI.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -299,19 +334,26 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Account\ChooseCharacter.cshtml" />
-    <None Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Home\Teacher_MainUI.cshtml" />
     <Content Include="Views\Home\Student_MainUI.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\SeminarFixedGroupNoSelection.cshtml" />
-    <Content Include="Views\SeminarRandomGroupNoSelection.cshtml" />
+    <Content Include="Views\Seminar\SeminarFixedGroupNoSelection.cshtml" />
+    <Content Include="Views\Seminar\SeminarRandomGroupNoSelection.cshtml" />
+    <Content Include="Views\Seminar\Seminar.cshtml" />
+    <Content Include="Views\Seminar\GradePresentationEndUI.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Seminar\GradePresentationUI.cshtml" />
+    <Content Include="Views\Seminar\StudentRollCallUI.cshtml" />
+    <Content Include="Views\Seminar\StudentRollCallEndUI.cshtml" />
+    <Content Include="Views\Seminar\StudentRollCallLateUI.cshtml" />
+    <Content Include="Views\Seminar\RandomGroupChooseTopicUI2.cshtml" />
+    <Content Include="Views\Seminar\RandomGroupChooseTopicUI.cshtml" />
+    <Content Include="Views\Seminar\RandomGroupLeaderUI.cshtml" />
+    <Content Include="Views\Seminar\RandomGroupNoLeaderUI.cshtml" />
+    <Content Include="Views\Seminar\RandomGroupMemberUI.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Manage\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
