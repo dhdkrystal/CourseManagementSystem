@@ -21,17 +21,14 @@ namespace CourseManagementSystem.Controllers
         {
             return View();
         }
-        public ActionResult ChooseSchool()
+        public ActionResult StudentBinding()
         {
             return View();
         }
-        public ActionResult ChooseSchool1()
+        public ActionResult TeacherBinding()
         {
             return View();
         }
-        public ActionResult ChooseSchool2()
-        {
-            return View();
-        }
+
     }
 }

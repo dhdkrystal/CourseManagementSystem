@@ -5,7 +5,8 @@ using System.Web;
 
 namespace CourseManagementSystem.ViewModels
 {
-    public enum Type
+
+public enum Type
     {
         student, teacher
     }

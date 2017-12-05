@@ -5,7 +5,5 @@ using System.Web;
 
 namespace CourseManagementSystem.ViewModels
 {
-    public class HomeViewModel
-    {
-    }
+    
 }
