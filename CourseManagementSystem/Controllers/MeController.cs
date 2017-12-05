@@ -6,7 +6,6 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web;
 using CourseManagementSystem.Models;
-using CourseManagementSystem.DTOs;
 using CourseManagementSystem.ViewModels;
 
 namespace CourseManagementSystem.Controllers
@@ -56,18 +55,32 @@ namespace CourseManagementSystem.Controllers
             }
             return new SignAndRegisterViewModel { Id = user.Id, Type = user.Type, Name = user.Name };
         }
-        
 
         [Route("register")]
         [HttpPost]
         public SignAndRegisterViewModel Register(LoginData data)
         {
             User user = db.Users.Where(b => b.Phone == data.phone).FirstOrDefault();
-            if(user != null)
+            if (user != null)
             {
                 throw new HttpResponseException(new HttpResponseMessage(HttpStatusCode.Unauthorized) { ReasonPhrase = "已存在此账户" });
             }
-            var newUser = new Models.User { Phone = data.phone, Password = data.password , Type = "unbinded"};
+            var newUser = new Models.User { Phone = data.phone, Password = data.password, Type = "unbinded" };
+            db.Users.Add(newUser);
+            db.SaveChanges();
+            return new SignAndRegisterViewModel { Id = newUser.Id, Type = newUser.Type, Name = newUser.Name };
+        }
+
+        [Route("Course")]
+        [HttpGet]
+        public SignAndRegisterViewModel GetCourseInfo( )
+        {
+            User user = db.Users.Where(b => b.Phone == data.phone).FirstOrDefault();
+            if (user != null)
+            {
+                throw new HttpResponseException(new HttpResponseMessage(HttpStatusCode.Unauthorized) { ReasonPhrase = "已存在此账户" });
+            }
+            var newUser = new Models.User { Phone = data.phone, Password = data.password, Type = "unbinded" };
             db.Users.Add(newUser);
             db.SaveChanges();
             return new SignAndRegisterViewModel { Id = newUser.Id, Type = newUser.Type, Name = newUser.Name };

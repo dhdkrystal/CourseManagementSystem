@@ -23,9 +23,9 @@ namespace CourseManagementSystem.Models
             public Presentation presentation;
             public class Presentation
             {
-                int a;
-                int b;
-                int c;
+                public int a;
+                public int b;
+                public int c;
             }
         }
         
