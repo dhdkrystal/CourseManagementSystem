@@ -29,8 +29,8 @@ namespace CourseManagementSystem.Migrations
             //
             context.Users.AddOrUpdate(new User[]
             {
-                new User{ Id = 1, Email="1@1.com", Name="1", Number="1", Phone="1", Sex = "male", Type="student"},
-                new User{ Id = 2, Email="2@2.com", Name="2", Number="2", Phone="2", Sex = "male", Type="student"},
+                new User{ Id = 1, Email="1@1.com", Name="1", Number="1", Phone="1", Sex = "male", Type="student", Password="123", Avatar=null, School=null, Title = null, UnionID = null},
+                new User{ Id = 2, Email="2@2.com", Name="2", Number="2", Phone="2", Sex = "male", Type="student", Password="123", Avatar=null, School=null, Title = null, UnionID = null},
             });
         }
     }

@@ -9,7 +9,7 @@ namespace CourseManagementSystem.ViewModels
     {
         student, teacher
     }
-    public class SigniAndRegisterViewModel
+    public class SignAndRegisterViewModel
     {
         //用户的唯一ID
         public int Id { get; set; }

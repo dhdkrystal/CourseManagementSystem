@@ -235,8 +235,11 @@
     <Compile Include="Controllers\MeController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Controllers\Users1Controller.cs" />
-    <Compile Include="DTOs\LoginData.cs" />
-    <Compile Include="DTOs\UserDto.cs" />
+    <Compile Include="Migrations\201712051141045_updateuser.cs" />
+    <Compile Include="Migrations\201712051141045_updateuser.Designer.cs">
+      <DependentUpon>201712051141045_updateuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\LoginData.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -426,6 +429,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712041436426_Initial1.resx">
       <DependentUpon>201712041436426_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712051141045_updateuser.resx">
+      <DependentUpon>201712051141045_updateuser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

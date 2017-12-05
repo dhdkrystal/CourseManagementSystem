@@ -374,4 +374,4 @@ C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\De
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.Initial.resources
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.GenerateResource.Cache
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.Initial1.resources
-C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.updateuser.resources

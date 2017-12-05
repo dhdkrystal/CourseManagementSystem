@@ -14,7 +14,7 @@ namespace CourseManagementSystem.Models
 
     public enum Type
     {
-        student, teacher
+        student, teacher, unbinded
     }
     public class User
     {
@@ -32,5 +32,17 @@ namespace CourseManagementSystem.Models
         public string Email { get; set; }
         //用户的性别[ male, female ]
         public string Sex { get; set; }
+        //用户的头衔
+        public string Title { get; set; }
+        //用户的密码
+        public string Password { get; set; }
+        //用户的微信UnionID
+        public string UnionID { get; set; }
+        //用户的头像
+        public string Avatar { get; set; }
+        //学校
+        public School School { get; set; }
+  
+        
     }
 }
