@@ -77,17 +77,17 @@ namespace CourseManagementSystem.Controllers
         // POST: Course
         [Route("Course")]
         [ResponseType(typeof(Course))]
-        public IHttpActionResult PostCourse(Course course)
+        public AddClassResultModel PostCourse(Course course)
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return null;
             }
 
             db.Courses.Add(course);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = course.Id }, course);
+            return new AddClassResultModel { Id = course.Id };
         }
 
         // DELETE: Course/5

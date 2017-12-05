@@ -50,4 +50,9 @@ namespace CourseManagementSystem.Models
         public string Name { get; set; }
         public int NumClass { get; set; }
     }
+
+    public class AddClassResultModel
+    {
+        public int Id { get; set; }
+    }
 }
