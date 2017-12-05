@@ -16,13 +16,17 @@ namespace CourseManagementSystem.Controllers
     {
         private CourseManagementSystemContext db = new CourseManagementSystemContext();
 
-        // GET: api/Courses
+        // GET: Course
+        [Route("Course")]
+        [HttpGet]
         public IQueryable<Course> GetCourses()
         {
+            //using CourseListInfoModel
             return db.Courses;
         }
 
-        // GET: api/Courses/5
+        // GET: Course/5
+        [Route("Course")]
         [ResponseType(typeof(Course))]
         public IHttpActionResult GetCourse(int id)
         {
@@ -32,7 +36,7 @@ namespace CourseManagementSystem.Controllers
                 return NotFound();
             }
 
-            return Ok(course);
+            return Ok(new CourseInfoModel { Id = course.Id, Name = course.Name, Description = course.Description});
         }
 
         // PUT: api/Courses/5
@@ -70,7 +74,8 @@ namespace CourseManagementSystem.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Courses
+        // POST: Course
+        [Route("Course")]
         [ResponseType(typeof(Course))]
         public IHttpActionResult PostCourse(Course course)
         {
@@ -85,7 +90,8 @@ namespace CourseManagementSystem.Controllers
             return CreatedAtRoute("DefaultApi", new { id = course.Id }, course);
         }
 
-        // DELETE: api/Courses/5
+        // DELETE: Course/5
+        [Route("Course")]
         [ResponseType(typeof(Course))]
         public IHttpActionResult DeleteCourse(int id)
         {
