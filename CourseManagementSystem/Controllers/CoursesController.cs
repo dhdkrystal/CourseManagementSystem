@@ -17,12 +17,16 @@ namespace CourseManagementSystem.Controllers
         private CourseManagementSystemContext db = new CourseManagementSystemContext();
 
         // GET: api/Courses
+        [Route("Course")]
+        [HttpGet]
         public IQueryable<Course> GetCourses()
         {
             return db.Courses;
         }
 
         // GET: api/Courses/5
+        [Route("Course/{id}")]
+        [HttpGet]
         [ResponseType(typeof(Course))]
         public IHttpActionResult GetCourse(int id)
         {

@@ -6,42 +6,47 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="divport" content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0">
     <title>Untitled Document</title>
-    <link href="~/Content/main.css" rel="stylesheet" type="text/css">
-    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="~/Content/StudentMainUI.css" rel="stylesheet" type="text/css">
 </head>
-
-<body>
-    <div class="box5">
+<body class="body">
+    <div class="PictureDiv">
         <!-- 背景图的div -->
-        <img style="position:absolute;margin-left: 12%;margin-top: 10%" src="~/Content/images/user.svg" width=100 height=100 />
-        <img src="~/Content/images/head-background.jpg" width="100%" >
-        <div class="FONT4" style="position:absolute; z-index:2; top:20px">姓名：邱明</div>
-        <div class="FONT4" style="position:absolute; z-index:2; top:60px">学号：24321432534</div>
+        <img class="user" src="~/Content/images/user.png" />
+        <img src="~/Content/images/background.jpg" class="Picture" />
+        <div class="name">姓名：邱明</div>
+        <div class="studentID">学号：243201522xxxx</div>
     </div>
 
-    <div class="box3">
-        <p class="FONT11">J2EE</p>
-        <p class="FONT51">老师：邱明</p>
+    <!--细线，hr不好设置css，用一个高度很小的div来代替-->
+    <div class="hrDiv"></div>
+
+    <div class="blueBox">
+        <p class="leftText"> J2EE</p>
+        <p class="rightText"> 老师：邱明</p>
     </div>
-    <div class="box3">
-        <p class="FONT11">J2EE</p>
-        <p class="FONT51">老师：邱明</p>
+    <div class="blueBox">
+        <p class="leftText"> J2EE</p>
+        <p class="rightText"> 老师：邱明</p>
     </div>
-    <div class="box3">
-        <p class="FONT11">J2EE</p>
-        <p class="FONT51">老师：邱明</p>
+    <div class="greyBox">
+        <p class="leftText"> J2EE</p>
+        <p class="rightText"> 老师：邱明</p>
     </div>
-    <div class="box3">
-        <p class="FONT11">J2EE</p>
-        <p class="FONT51">老师：邱明</p>
+    <div class="blueBox">
+        <p class="leftText"> J2EE</p>
+        <p class="rightText"> 老师：邱明</p>
     </div>
 </body>
-
-
 </html>
+
+
+
+
 
 
 
