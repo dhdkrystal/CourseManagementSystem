@@ -2,7 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="divport" content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0">
     <title>Untitled Document</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="~/Content/ChooseCharacter.css" rel="stylesheet" type="text/css">
     <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -18,10 +22,10 @@
         </div>
         <div class="hrDiv"></div>
         <div class="teacherDiv">
-            <button class="teacherButton">老师</button>
+            <button class="teacherButton" id="teacherButton">老师</button>
         </div>
         <div class="studentDiv">
-            <button class="studentButton">学生</button>
+            <button class="studentButton" id="studengButton">学生</button>
         </div>
 
 
@@ -32,12 +36,12 @@
                     $.ajax({
                         url: '/me',
                         type: 'PUT',
-                        data: JSON.stringify({
-                            type: type
-                        }),
+                        data:{
+                            'type': type
+                        },
                         dateType: 'json',
                         success: function (data) {
-                            document.location.href = '/Account/TeacherBindingUI';
+                            document.location.href = '/Account/TeacherBinding';
                         },
                         error: function (mesg) {
                             alert(mesg);
@@ -53,12 +57,12 @@
                     $.ajax({
                         url: '/me',
                         type: 'PUT',
-                        data: JSON.stringify({
-                            type: type
-                        }),
+                        data:{
+                            'type': type
+                        },
                         dateType: 'json',
                         success: function (data) {
-                            document.location.href = '/Account/studentBindingUI';
+                            document.location.href = '/Account/StudentBinding';
                         },
                         error: function (mesg) {
                             alert(mesg);

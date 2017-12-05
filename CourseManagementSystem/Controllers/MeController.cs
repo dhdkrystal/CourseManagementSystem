@@ -29,9 +29,10 @@ namespace CourseManagementSystem.Controllers
 
         [Route("me")]
         [HttpPut]
-        public void  ModifyInfo()
+        public IHttpActionResult ChooseCharacter()
         {
-           
+            return StatusCode(HttpStatusCode.NoContent);
+
         }
 
         
@@ -60,11 +61,11 @@ namespace CourseManagementSystem.Controllers
         [HttpPost]
         public SignAndRegisterViewModel Register(LoginData data)
         {
-            User user = db.Users.Where(b => b.Phone == data.phone).FirstOrDefault();
-            if (user != null)
-            {
-                throw new HttpResponseException(new HttpResponseMessage(HttpStatusCode.Unauthorized) { ReasonPhrase = "已存在此账户" });
-            }
+            //User user = db.Users.Where(b => b.Phone == data.phone).FirstOrDefault();
+            //if (user != null)
+            //{
+                //throw new HttpResponseException(new HttpResponseMessage(HttpStatusCode.Unauthorized) { ReasonPhrase = "已存在此账户" });
+            //}
             var newUser = new Models.User { Phone = data.phone, Password = data.password, Type = "unbinded" };
             db.Users.Add(newUser);
             db.SaveChanges();
