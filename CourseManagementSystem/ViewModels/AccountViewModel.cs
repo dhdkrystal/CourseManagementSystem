@@ -5,8 +5,13 @@ using System.Web;
 
 namespace CourseManagementSystem.ViewModels
 {
+    public class LoginData
+    {
+        public string phone { get; set; }
+        public string password { get; set; }
+    }
 
-public enum Type
+    public enum Type
     {
         student, teacher
     }
