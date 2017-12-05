@@ -18,6 +18,7 @@ public enum Type
         public string Type { get; set; }
         //用户的姓名
         public string Name { get; set; }
+        public string Jwt { get; set; }
 
     }
     public class RegisterViewModel
@@ -28,6 +29,7 @@ public enum Type
         public string Type { get; set; }
         //用户的姓名
         public string Name { get; set; }
+        public string Jwt { get; set; }
 
     }
 }
