@@ -78,15 +78,49 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.OData.5.6.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SqlSugar, Version=4.6.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlSugar.4.6.0.9\lib\SqlSugar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Spatial, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Spatial.5.6.0\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=5.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.5.3.1\lib\net45\System.Web.Http.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -195,16 +229,51 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ClassController.cs" />
-    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\SchoolController.cs" />
-    <Compile Include="Controllers\SeminarController.cs" />
+    <Compile Include="Controllers\MeController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
+    <Compile Include="Controllers\Users1Controller.cs" />
+    <Compile Include="DTOs\UserDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712041427399_Initial.cs" />
+    <Compile Include="Migrations\201712041427399_Initial.Designer.cs">
+      <DependentUpon>201712041427399_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712041436426_Initial1.cs" />
+    <Compile Include="Migrations\201712041436426_Initial1.Designer.cs">
+      <DependentUpon>201712041436426_Initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AcountViewModels.cs" />
+    <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\ClassGroup.cs" />
+    <Compile Include="Models\ClassTime.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\CourseClass.cs" />
+    <Compile Include="Models\CourseDetail.cs" />
+    <Compile Include="Models\CourseManagementSystemContext.cs" />
+    <Compile Include="Models\Group.cs" />
+    <Compile Include="Models\School.cs" />
+    <Compile Include="Models\Seminar.cs" />
+    <Compile Include="Models\SeminarClasses.cs" />
+    <Compile Include="Models\SeminarDetail.cs" />
+    <Compile Include="Models\SeminarGrade.cs" />
+    <Compile Include="Models\SeminarGradeDetail.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\StudentSeminar.cs" />
+    <Compile Include="Models\Teacher.cs" />
+    <Compile Include="Models\Topic.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AccountViewModel.cs" />
+    <Compile Include="ViewModels\ClassViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\SchoolViewModel.cs" />
+    <Compile Include="ViewModels\SiminarViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\CourseManagementSystem.mdf" />
@@ -320,7 +389,7 @@
     <None Include="Views\Home\CheckTeacherInfoUI .cshtml" />
     <None Include="Views\Account\ChooseCharater.cshtml" />
     <None Include="Views\School\CreateSchoolUI.cshtml" />
-    <None Include="Views\Account\LoginUI.cshtml" />
+    <None Include="Views\Account\Login.cshtml" />
     <None Include="Views\Account\RegisterUI.cshtml" />
     <None Include="Views\Account\StudentBindingUI.cshtml" />
     <None Include="Views\Account\TeacherBindingUI.cshtml" />
@@ -334,14 +403,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\Teacher_MainUI.cshtml" />
-    <Content Include="Views\Home\Student_MainUI.cshtml" />
+    <Content Include="Views\Home\Teacher.cshtml" />
+    <Content Include="Views\Home\Student.cshtml" />
     <Content Include="Views\Seminar\SeminarFixedGroupNoSelection.cshtml" />
     <Content Include="Views\Seminar\SeminarRandomGroupNoSelection.cshtml" />
     <Content Include="Views\Seminar\Seminar.cshtml" />
     <Content Include="Views\Seminar\GradePresentationEndUI.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Seminar\GradePresentationUI.cshtml" />
     <Content Include="Views\Seminar\StudentRollCallUI.cshtml" />
     <Content Include="Views\Seminar\StudentRollCallEndUI.cshtml" />
@@ -353,7 +420,12 @@
     <Content Include="Views\Seminar\RandomGroupMemberUI.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
+    <EmbeddedResource Include="Migrations\201712041427399_Initial.resx">
+      <DependentUpon>201712041427399_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712041436426_Initial1.resx">
+      <DependentUpon>201712041436426_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -361,6 +433,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
