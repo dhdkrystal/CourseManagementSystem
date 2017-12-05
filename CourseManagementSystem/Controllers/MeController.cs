@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Microsoft.AspNetCore.Mvc;
 using System.Web;
 using CourseManagementSystem.Models;
+using CourseManagementSystem.DTOs;
 
 namespace CourseManagementSystem.Controllers
 {
@@ -36,8 +36,10 @@ namespace CourseManagementSystem.Controllers
         
         [Route("signin")]
         [HttpPost]
-        public User Signin()
+        public User Signin(LoginData data)
         {
+            Console.WriteLine(data.phone);
+            Console.WriteLine(data.password);
             if (1 > 2)
                 return new User { Id = 1, Email = "1@1.com", Name = "1", Number = "1", Phone = "1", Sex = "male", Type = "student" };
             else

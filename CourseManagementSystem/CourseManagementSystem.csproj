@@ -235,6 +235,7 @@
     <Compile Include="Controllers\MeController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Controllers\Users1Controller.cs" />
+    <Compile Include="DTOs\LoginData.cs" />
     <Compile Include="DTOs\UserDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
