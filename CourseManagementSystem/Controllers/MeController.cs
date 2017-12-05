@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Web;
 using CourseManagementSystem.Models;
 using CourseManagementSystem.DTOs;
+using CourseManagementSystem.ViewModels;
 
 namespace CourseManagementSystem.Controllers
 {

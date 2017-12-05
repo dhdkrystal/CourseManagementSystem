@@ -386,14 +386,14 @@
     <Content Include="Views\Class\RandomRollCallUI.cshtml" />
     <Content Include="Views\Class\RandomRollStartCallUI.cshtml" />
     <Content Include="Views\Class\RollCallListUI.cshtml" />
-    <None Include="Views\Home\CheckStudentInfoUI.cshtml" />
-    <None Include="Views\Home\CheckTeacherInfoUI .cshtml" />
-    <None Include="Views\Account\ChooseCharater.cshtml" />
+    <None Include="Views\Home\CheckStudentInfo.cshtml" />
+    <None Include="Views\Home\CheckTeacherInfo .cshtml" />
+    <None Include="Views\Account\ChooseCharacter.cshtml" />
     <None Include="Views\School\CreateSchoolUI.cshtml" />
     <None Include="Views\Account\Login.cshtml" />
-    <None Include="Views\Account\RegisterUI.cshtml" />
-    <None Include="Views\Account\StudentBindingUI.cshtml" />
-    <None Include="Views\Account\TeacherBindingUI.cshtml" />
+    <None Include="Views\Account\Register.cshtml" />
+    <None Include="Views\Account\StudentBinding.cshtml" />
+    <None Include="Views\Account\TeacherBinding.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
