@@ -36,4 +36,23 @@ namespace CourseManagementSystem.Models
         [Compare("Password", ErrorMessage = "密码和确认密码不匹配。")]
         public string ConfirmPassword { get; set; }
     } 
+
+    public class CourseInfoModel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+    }
+
+    public class CourseListInfoModel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int NumClass { get; set; }
+    }
+
+    public class AddClassResultModel
+    {
+        public int Id { get; set; }
+    }
 }

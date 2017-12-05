@@ -16,17 +16,17 @@ namespace CourseManagementSystem.Controllers
     {
         private CourseManagementSystemContext db = new CourseManagementSystemContext();
 
-        // GET: api/Courses
+        // GET: Course
         [Route("Course")]
         [HttpGet]
         public IQueryable<Course> GetCourses()
         {
+            //using CourseListInfoModel
             return db.Courses;
         }
 
-        // GET: api/Courses/5
-        [Route("Course/{id}")]
-        [HttpGet]
+        // GET: Course/5
+        [Route("Course")]
         [ResponseType(typeof(Course))]
         public IHttpActionResult GetCourse(int id)
         {
@@ -36,7 +36,7 @@ namespace CourseManagementSystem.Controllers
                 return NotFound();
             }
 
-            return Ok(course);
+            return Ok(new CourseInfoModel { Id = course.Id, Name = course.Name, Description = course.Description});
         }
 
         // PUT: api/Courses/5
@@ -74,22 +74,24 @@ namespace CourseManagementSystem.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Courses
+        // POST: Course
+        [Route("Course")]
         [ResponseType(typeof(Course))]
-        public IHttpActionResult PostCourse(Course course)
+        public AddClassResultModel PostCourse(Course course)
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return null;
             }
 
             db.Courses.Add(course);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = course.Id }, course);
+            return new AddClassResultModel { Id = course.Id };
         }
 
-        // DELETE: api/Courses/5
+        // DELETE: Course/5
+        [Route("Course")]
         [ResponseType(typeof(Course))]
         public IHttpActionResult DeleteCourse(int id)
         {
