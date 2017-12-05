@@ -10,7 +10,8 @@ namespace CourseManagementSystem.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = false;
         }
 
         protected override void Seed(CourseManagementSystem.Models.CourseManagementSystemContext context)

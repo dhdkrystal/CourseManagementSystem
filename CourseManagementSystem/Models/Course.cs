@@ -14,22 +14,20 @@ namespace CourseManagementSystem.Models
         public DateTime StartTime { get; set ; }
         public DateTime EndTime { get; set ; }
         public string Description { get; set; }
-        public Proportions Proportion { get; set; }
-
-        
-        public class Proportions
-        {
-            public int report;
-            public Presentation presentation;
-            public class Presentation
-            {
-                public int a;
-                public int b;
-                public int c;
-            }
-        }
-        
+        public Proportions Proportion { get; set; }   
 
     }
-    
+    public class Proportions
+    {
+        public int Id { get; set; }
+        public int report { get; set; }
+        public Presentation presentation { get; set; }
+    }
+    public class Presentation
+    {
+        public int Id { get; set; }
+        public int a { get; set; }
+        public int b { get; set; }
+        public int c { get; set; }
+    }
 }

@@ -373,8 +373,6 @@ C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\zh
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.Initial.resources
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.GenerateResource.Cache
-C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.Initial1.resources
-C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.updateuser.resources
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Data.Edm.dll
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Data.OData.dll
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\SqlSugar.dll
@@ -421,3 +419,21 @@ C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementS
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.Initial1.resources
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.updateuser.resources
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.GenerateResource.Cache
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Cors.dll
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Security.Jwt.dll
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Cors.dll
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Http.Cors.dll
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Http.Owin.dll
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Thinktecture.IdentityModel.Core.dll
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Cors.xml
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Security.Jwt.xml
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Http.Cors.xml
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Http.Owin.xml
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Thinktecture.IdentityModel.Core.pdb
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\JWT.dll

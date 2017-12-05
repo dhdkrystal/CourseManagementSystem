@@ -71,20 +71,20 @@ namespace CourseManagementSystem.Controllers
             return new SignAndRegisterViewModel { Id = newUser.Id, Type = newUser.Type, Name = newUser.Name };
         }
 
-        [Route("Course")]
-        [HttpGet]
-        public SignAndRegisterViewModel GetCourseInfo( )
-        {
-            User user = db.Users.Where(b => b.Phone == data.phone).FirstOrDefault();
-            if (user != null)
-            {
-                throw new HttpResponseException(new HttpResponseMessage(HttpStatusCode.Unauthorized) { ReasonPhrase = "已存在此账户" });
-            }
-            var newUser = new Models.User { Phone = data.phone, Password = data.password, Type = "unbinded" };
-            db.Users.Add(newUser);
-            db.SaveChanges();
-            return new SignAndRegisterViewModel { Id = newUser.Id, Type = newUser.Type, Name = newUser.Name };
-        }
+        //[Route("Course")]
+        //[HttpGet]
+        //public SignAndRegisterViewModel GetCourseInfo()
+        //{
+        //    User user = db.Users.Where(b => b.Phone == data.phone).FirstOrDefault();
+        //    if (user != null)
+        //    {
+        //        throw new HttpResponseException(new HttpResponseMessage(HttpStatusCode.Unauthorized) { ReasonPhrase = "已存在此账户" });
+        //    }
+        //    var newUser = new Models.User { Phone = data.phone, Password = data.password, Type = "unbinded" };
+        //    db.Users.Add(newUser);
+        //    db.SaveChanges();
+        //    return new SignAndRegisterViewModel { Id = newUser.Id, Type = newUser.Type, Name = newUser.Name };
+        //}
 
     }
 }

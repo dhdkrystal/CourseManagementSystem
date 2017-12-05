@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="JWT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\JWT.2.3.2\lib\net45\JWT.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -259,26 +262,17 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MeController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
-    <Compile Include="Controllers\Users1Controller.cs" />
-    <Compile Include="Migrations\201712051141045_updateuser.cs" />
-    <Compile Include="Migrations\201712051141045_updateuser.Designer.cs">
-      <DependentUpon>201712051141045_updateuser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DbMigrationsConfiguration.cs" />
-    <Compile Include="ViewModels\LoginData.cs" />
+    <Compile Include="JWT\JwtAuthHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201712041427399_Initial.cs" />
     <Compile Include="Migrations\201712041427399_Initial.Designer.cs">
       <DependentUpon>201712041427399_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712041436426_Initial1.cs" />
-    <Compile Include="Migrations\201712041436426_Initial1.Designer.cs">
-      <DependentUpon>201712041436426_Initial1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcountViewModels.cs" />
@@ -455,12 +449,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201712041427399_Initial.resx">
       <DependentUpon>201712041427399_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712041436426_Initial1.resx">
-      <DependentUpon>201712041436426_Initial1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712051141045_updateuser.resx">
-      <DependentUpon>201712051141045_updateuser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
