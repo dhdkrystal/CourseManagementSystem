@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="~/Content/FixedRollCallUI.css"></link>
+    <link rel="stylesheet" href="~/Content/RollStartCallUI.css"></link>
 
 
 </head>
@@ -55,13 +55,13 @@
 的 签到名单按钮 是SmallBnt。 当使用greyBigBtn的时候要加
 上提示语。-->
 <div>
-    <button type="button" class="blueBigBtn">
+    <button type="button" class="blueBigBtn" onclick="javascript:window.location='/Class/Start'">
         开始签到
     </button>
 </div>
 
 <div>
-    <button type="button" class="greenBigBtn">
+    <button type="button" class="greenBigBtn" onclick="javascript:window.location = '/Class/CheckGroup'">
         查看分组
     </button>
 </div>
