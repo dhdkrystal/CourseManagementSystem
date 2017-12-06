@@ -15,7 +15,7 @@ html{
 .topBox
 {
 	width:100%;
-    height:30em;
+    height:20%;
     position:relative;
     background-color: #66CCFF;
 }
@@ -39,14 +39,14 @@ html{
     color: #fff;
     font-size: 2em;
 	margin-left: 75%;
-	margin-top: 9em;
+	margin-top: 23%;
     float: left;
 }
 
 /*讨论课的时间和分组方式Div*/
 .clockAndGroupDiv {
     width: 49.9%;
-    margin-top: 0.5em;
+    margin-top: 1%;
     color: #000;
     font-size: 2em;
     float: left;
@@ -66,7 +66,7 @@ html{
 /*班级Div*/
 .class {
     display: inline-block;
-    margin-top: 8em;
+    margin-top: 10%;
     width: 49%;
     height: 26%;
 }

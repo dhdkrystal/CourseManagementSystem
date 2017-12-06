@@ -5,19 +5,22 @@
     <meta name="divport" content="width=device-width,
                                      initial-scale=1.0,
                                      maximum-scale=1.0">
-    <title>GroupInfoUI2</title>
+    <title>GroupInfo</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="~/Content/GroupInfoUI2.css"></link>
-
+    <script>
+        function isHidden(oDiv) {
+            var vDiv = document.getElementById(oDiv);
+            vDiv.style.display=(vDiv.style.display=='none')?'block':'none';
+        }
+    </script>
 
 </head>
 <body>
 <!--设置左上角的usersIcon-->
 <div class="blueUsersDiv">
     <img src="~/Content/images/users.png" class='blueUsersIcon'/>
-    <strong>队伍信息</strong>
+    <strong class="title">队伍信息</strong>
 </div>
 
 
@@ -27,45 +30,42 @@
 
 
 <!--学生名单上面那个蓝色的bar-->
-<div class="studentListBarDiv">
+<div class="studentListBarDiv" onclick="isHidden('group1')">
     <span class="groupName">队伍1</span>
     <span class="groupTopics">选题：</span>
 </div>
 
 <!--学生块，分为左边的和右边的，增加学生的时候选择好左边或者
 右边后直接复制就好，之后在span下面修改学生名字-->
-<div class='studentLeftBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">杨xx</span>
-</div>
+    <div id="group1">
+        <div class='studentLeftBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">杨xx</span>
+        </div>
+        <div class='studentRightBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">周xx</span>
+        </div>
+        <div class='studentLeftBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">孙xx</span>
+        </div>
 
-<div class='studentRightBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">周xx</span>
-</div>
-
-<div class='studentLeftBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">孙xx</span>
-</div>
-
-
-<!--加入红叉的学生块-->
-<div class='studentRightBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">王xx</span>
-    <img src="~/Content/images/红叉.png" class='redCancelIcon'/>
-</div>
-
-<!--空白添加学生的块-->
-<div class='studentLeftBlock'>
-    <img src="~/Content/images/加号.png" class='addIcon'/>
-</div>
-
+        <!--加入红叉的学生块-->
+        <div class='studentRightBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">王xx</span>
+            <img src="~/Content/images/redCross.png" class='redCancelIcon' />
+        </div>
+        <!--空白添加学生的块-->
+        <div class='studentLeftBlock'>
+            <img src="~/Content/images/add.png" class='addIcon' />
+        </div>
+    </div>
 
 <!--学生名单上面那个蓝色的bar-->
 <div class='studentListBarDiv'>
-    <span>队伍2</span>
+    <span class="groupName">队伍2</span>
     <span class="groupTopics">选题：</span>
 </div>
 <div class='studentListBarDiv'>
@@ -73,14 +73,14 @@
     <span class="groupTopics">选题：</span>
 </div>
 <div class='studentListBarDiv'>
-    <span>队伍4</span>
+    <span class="groupName">队伍4</span>
     <span class="groupTopics">选题：</span>
 </div>
 
 
 <!--迟到学生上面那个蓝色的bar-->
 <div class='studentNoCallBarDiv'>
-    <span>未签到学生</span>
+    <span class="groupName">未签到学生</span>
 </div>
 
 <!--未签到学生-->

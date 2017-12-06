@@ -15,7 +15,7 @@ namespace CourseManagementSystem.Controllers
             ViewBag.CourseName = "OOAD";
             ViewBag.SeminarName = "讨论课4";
             ViewBag.Time = "11月6日-11月12日";
-            ViewBag.GroupType = "固定分组";
+            ViewBag.GroupType = "随机分组";
             return View();
         }
 
@@ -28,10 +28,6 @@ namespace CourseManagementSystem.Controllers
             return View();
         }
         public ActionResult FixedRollStartCallUI()
-        {
-            return View();
-        }
-        public ActionResult RandomRollStartCallUI()
         {
             return View();
         }
@@ -78,6 +74,22 @@ namespace CourseManagementSystem.Controllers
             return View();
         }
         public ActionResult FixedRollCallEndUI1()
+        {
+            return View();
+        }
+        public ActionResult GroupInfoUI()
+        {
+            return View();
+        }
+        public ActionResult RandomRollStartCallUI()
+        {
+            return View();
+        }
+        public ActionResult RandomEndRollCallUI()
+        {
+            return View();
+        }
+        public ActionResult RandomRollCallUI()
         {
             return View();
         }
