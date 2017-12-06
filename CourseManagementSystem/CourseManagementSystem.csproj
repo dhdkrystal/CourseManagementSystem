@@ -423,7 +423,7 @@
     <Content Include="Views\Class\RandomRollStartCallUI.cshtml" />
     <Content Include="Views\Class\RollCallListUI.cshtml" />
     <None Include="Views\Home\CheckStudentInfo.cshtml" />
-    <None Include="Views\Home\CheckTeacherInfo .cshtml" />
+    <None Include="Views\Home\CheckTeacherInfo.cshtml" />
     <None Include="Views\Account\ChooseCharacter.cshtml" />
     <None Include="Views\School\CreateSchoolUI.cshtml" />
     <None Include="Views\Account\Login.cshtml" />

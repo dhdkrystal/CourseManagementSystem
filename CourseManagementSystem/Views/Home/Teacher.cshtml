@@ -23,19 +23,41 @@
         <div class="teacherID">教工号：243201522xxxx</div>
     </div>
 
-    <div class="lowBox">
-        <div class="blueBox">
-            <div class="text"> J2EE</div>
-        </div>
-        <div class="blueBox">
-            <div class="text"> J2EE</div>
-        </div>
-        <div class="blueBox">
-            <div class="text"> J2EE</div>
-        </div>
-        <div class="blueBox">
-            <div class="text"> J2EE</div>
-        </div>
+    <div class="lowBox" id="course_container">
+        <script>
+             $(document).ready(function () {
+                 $.ajax({
+                     url: '/me',
+                     type: 'GET',
+                     success: function (data) {
+                         $('#name').append(data.Name);
+                         $('#number').append(data.Phone);
+                     },
+                     error: function (data) {
+                         alert("加载学生信息出错");
+                     }
+                 })
+
+                 $.ajax({
+                     url: '/course',
+                     type: 'GET',
+                     success: function (data) {
+                         for (i = 0; i < data.length; i++) {
+                             var course = data[i];
+                             template = "<div class=\"blueBox\">\n";
+                             template += "<p class=\"leftText\">";
+                             template += course.Name;
+                             template += "</p></div >";
+                             $('#course_container').append(template);
+                         }
+
+                     },
+                     error: function (data) {
+                         alert("加载课程信息出错");
+                     }
+                 })
+             });
+        </script>
     </div>
 </body>
 

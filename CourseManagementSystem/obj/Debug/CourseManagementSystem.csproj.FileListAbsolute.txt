@@ -415,8 +415,6 @@ C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementS
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.Initial.resources
-C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.Initial1.resources
-C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Migrations.updateuser.resources
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.GenerateResource.Cache
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.IdentityModel.Logging.dll
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.IdentityModel.Tokens.dll
@@ -437,3 +435,22 @@ C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Sy
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Thinktecture.IdentityModel.Core.pdb
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\JWT.dll
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\JWT.dll
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Cors.dll
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Security.Jwt.dll
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Cors.dll
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Http.Cors.dll
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Http.Owin.dll
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Thinktecture.IdentityModel.Core.dll
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Cors.xml
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Security.Jwt.xml
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Http.Cors.xml
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Http.Owin.xml
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Thinktecture.IdentityModel.Core.pdb
+C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csprojResolveAssemblyReference.cache

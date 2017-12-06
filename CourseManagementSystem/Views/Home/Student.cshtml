@@ -17,56 +17,55 @@
 </head>
 
 <body class="body">
-    <div class="PictureDiv" onclick="location.href='CheckStudentInfo'">
+    <div class="PictureDiv">
         <!-- 背景图的div -->
         <img class="user" src="~/Content/images/user.png" />
         <img src="~/Content/images/background.jpg" class="Picture" />
         <div class="name" id="name">姓名：</div>
-        <div class="studentId" id="number">学号：</div>
+        <div class="studentID" id="number">学号：</div>
     </div>
-    <div class="hrDiv"></div>
-    <div id="course_container">
-        
+    <div class="lowBox"id="course_container">
+        <script>
+            $(document).ready(function () {
+                $.ajax({
+                    url: '/me',
+                    type: 'GET',
+                    success: function (data) {
+                        $('#name').append(data.Name);
+                        $('#number').append(data.Phone);
+                    },
+                    error: function (data) {
+                        alert("加载学生信息出错");
+                    }
+                })
+
+                $.ajax({
+                    url: '/course',
+                    type: 'GET',
+                    success: function (data) {
+                        for (i = 0; i < data.length; i++) {
+                            var course = data[i];
+                            template = "<div class=\"blueBox\">\n";
+                            template += "<p class=\"leftText\">";
+                            template += course.Name;
+                            template += "</p>\n<p class=\"rightText\">老师：";
+                            template += course.Id;
+                            template += "</p></div >";
+                            $('#course_container').append(template);
+                        }
+
+                    },
+                    error: function (data) {
+                        alert("加载课程信息出错");
+                    }
+                })
+            });
+        </script>
     </div>
 </body>
 
 
 </html>
-<script>
-    $(document).ready(function () {
-        $.ajax({
-            url: '/me',
-            type: 'GET',
-            success: function (data) {
-                $('#name').append(data.Name);
-                $('#number').append(data.Phone);
-            }, 
-            error: function (data) {
-                alert("加载学生信息出错");
-            }
-        })
 
-        $.ajax({
-            url: '/course',
-            type: 'GET',
-            success: function (data) {
-                for (i = 0; i < data.length; i++) {
-                    var course = data[i];
-                    template = "<div class=\"blueBox\">\n";
-                    template += "<p class=\"leftText\">";
-                    template += course.Name;
-                    template += "</p>\n<p class=\"rightText\">老师：";
-                    template += course.Id;
-                    template += "</p></div >";
-                    $('#course_container').append(template);
-                }
-                
-            }, 
-            error: function (data) {
-                alert("加载课程信息出错");
-            }
-        })
-    });
-</script>
 
 
