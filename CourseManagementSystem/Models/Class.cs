@@ -14,5 +14,10 @@ namespace CourseManagementSystem.Models
         //班级的人数
         public int NumStudent { get; set; }
         public ClassTime TimeSite { get; set; }
+        public bool Calling { get; set; }
+        public string Roster { get; set; }
+        public Proportions Proportions { get; set; }
+        
     }
+
 }

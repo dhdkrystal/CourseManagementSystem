@@ -22,5 +22,7 @@ namespace CourseManagementSystem.Models
         public System.Data.Entity.DbSet<CourseManagementSystem.Models.User> Users { get; set; }
 
         public System.Data.Entity.DbSet<CourseManagementSystem.Models.Course> Courses { get; set; }
+
+        public System.Data.Entity.DbSet<CourseManagementSystem.Models.Class> Classes { get; set; }
     }
 }

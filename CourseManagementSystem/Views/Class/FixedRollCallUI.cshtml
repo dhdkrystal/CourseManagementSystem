@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="~/Content/FixedRollCallUI.css"></link>
+    <link rel="stylesheet" href="~/Content/RollStartCallUI.css"></link>
 
 
 </head>
@@ -48,23 +48,24 @@
 <div class="studentNum2">
     <img src="~/Content/images/users.png" class="usersIcon2"/>
     <span>已签到学生: 0/40</span>
+    <button type="button" class="blueCallBtn"  onclik="javascript: window.location = '/Class/CheckListTmp'">
+        签到名单
+    </button>
 </div>
-<button type="button" class="blueSmallBtn">
-    签到名单
-</button>
+
 
 
 <!--下面是button，分为BigBtn和SmallBnt,只有正在签到时
 的 签到名单按钮 是SmallBnt。 当使用greyBigBtn的时候要加
 上提示语。-->
 <div>
-    <button type="button" class="redBigBtn">
+    <button type="button" class="redBigBtn" onclick="javascript: window.location = '/Class/End'">
         结束签到
     </button>
 </div>
 
 <div>
-    <button type="button" class="greenBigBtn">
+    <button type="button" class="greenBigBtn" onclick="javascript:window.location='/Class/CheckGroup'">
         查看分组
     </button>
 </div>

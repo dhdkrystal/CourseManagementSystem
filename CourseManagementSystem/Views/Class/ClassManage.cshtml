@@ -19,39 +19,58 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <script src="~/Scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript" >
+        $(document).ready(function () {
+            $("#ClassImage").click(function () {
+                var GroupType = "@ViewBag.GroupType";
+                $.ajax({
+                    url: "/Class/Class",
+                    type: "GET",
+                    data: {GroupType:GroupType},
+                    datatype:"json",
+                })
+            })
+        })
+    </script>
     <link rel="stylesheet" href="~/Content/ClassManage.css"></link>
 </head>
-<body>
+<body class="body">
 <!--设置蓝色上方-->
-<div class='blueHeader'>
-    <span>OOAD</span>
-    <span class="seminarText">讨论课4</span>
+<div class="topBox">
+    <span class="title">@ViewBag.CourseName</span>
+    <span class="seminarText">@ViewBag.SeminarName</span>
 </div>
 
 <!--讨论课的时间和分组方式-->
-<div class="clockAndGroupDiv">
-    <img src="~/Content/images/闹钟.png" class="icon">
-    <span>11月6日-11月12日</span>
+<div class="clockAndGroupDiv" >
+    <img src="~/Content/images/clock.png" class="icon">
+    <span>@ViewBag.Time</span>
 </div>
 
 <div class="clockAndGroupDiv">
-    <img src="~/Content/images/曲别针.png" class="icon">
-    <span>随机分组</span>
+    <img src="~/Content/images/clip.png" class="icon">
+    <span>@ViewBag.GroupType</span>
 </div>
 
 <!--班级Icon及名字,增加新班级就复制一个div-->
-<div class="class">
-<img src="~/Content/images/班级.png" class="classIcon">
+<div class="class" >
+    
+        <img src="~/Content/images/ClassManage.png" class="classIcon"  id="ClassImage">
+   
   <p class="className">班级1</p>
 </div>
 
 <div class="class">
-    <img src="~/Content/images/班级.png" class="classIcon">
-    <p class="className">班级2</p>
+    <a href="@Url.Action("Class","Class")">
+        <img src="~/Content/images/ClassManage.png" class="classIcon">
+    </a>
+        <p class="className">班级2</p>
+    
 </div>
 
 <div class="class">
-    <img src="~/Content/images/班级.png" class="classIcon">
+    <img src="~/Content/images/ClassManage.png" class="classIcon">
     <p class="className">班级3</p>
 </div>
 
