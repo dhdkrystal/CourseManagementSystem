@@ -2,30 +2,41 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="divport" content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0">
     <title>Untitled Document</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="~/Content/RegisterUI.css" rel="stylesheet" type="text/css">
     <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap -->
 </head>
 
-<body>
-    <div class="topBoardView" >
+<body class="body">>
+    <div class="PictureDiv">
         <!-- 背景图的div -->
-        <img  width="100%" height="250px" src="~/Content/images/head-background.jpg" position="absolute">
-        <img class="topLight" src="~/Content/images/灯.svg">
-		<div class="topTips">注册</div>
-		<div class="topLine"/>
-        
+        <img class="bulb" src="~/Content/images/bulb.png" />
+        <img src="~/Content/images/background.jpg" class="Picture" />
+        <div class="title">注册</div>
     </div>
- <div class="mainView">
-	<div class="phoneID">手机号：</div>
-	<div class="password">密码：</div>
-	<div class="confirmPassword">确认密码：</div>
-	<input class="inputphoneID" id="phone">
-	<input class="inputPassword" id="password">
-	<input class="inputConfirmPassword" id="confirmPassword">
-    <button class="confirmButton" id="register">注册</button>
- </div>  
+    <div class="hrDiv"></div>
+    <div class="mainView">
+        <div class="studentID">手机号 :</div>
+        <input class="inputstudentID" id="phone">
+        <img class="tipIcon" src="~/Content/images/warning.png">
+        <div class="tipFont">提交后不能修改</div>
+        <div class="Name" >密码 :</div>
+        <input type="password"id="password"  class="inputName">
+        <div class="school">
+            确认密码 :
+
+        </div>
+        <input type="password"id="confirmPassword" class="inputSchool">
+        <div class="comfirmDiv">
+            <button class="confirmButton" id="register">绑定</button>
+        </div>
+
+    </div>
  <script>
         $(document).ready(function () {
             $("#register").click(function () {
@@ -41,13 +52,13 @@
                     $.ajax({
                         url: '/register',
                         type: 'POST',
-                        data: JSON.stringify({
-                            phone: phone,
-                            password: password,
-                        }),
+                        data: {
+                            'phone': phone,
+                            'password': password,
+                        },
                         dateType:'json',
                         success: function (data) {
-                                document.location.href = '/Home/ChooseCharater';
+                                document.location.href = '/Account/ChooseCharacter';
                         },
                         error: function (mesg) {
                             alert(mesg);
