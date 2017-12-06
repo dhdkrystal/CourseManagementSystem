@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="JWT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\JWT.2.3.2\lib\net45\JWT.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -78,15 +81,89 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.OData.5.6.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=1.1.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.1.1.5\lib\net451\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.1.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.1.5\lib\net451\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Cors.3.1.0\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Jwt, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Jwt.3.1.0\lib\net45\Microsoft.Owin.Security.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlSugar, Version=4.6.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlSugar.4.6.0.9\lib\SqlSugar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.1.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.1.5\lib\net451\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Spatial, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Spatial.5.6.0\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=5.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.5.3.1\lib\net45\System.Web.Http.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -131,6 +208,9 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="Thinktecture.IdentityModel.Core, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Thinktecture.IdentityModel.Core.1.4.0\lib\net45\Thinktecture.IdentityModel.Core.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -141,9 +221,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -162,23 +239,11 @@
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin">
-      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Host.SystemWeb">
-      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security">
-      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Owin.Security.Facebook">
       <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security.Cookies">
       <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.OAuth">
-      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security.Google">
       <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
@@ -195,16 +260,47 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ClassController.cs" />
-    <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\SchoolController.cs" />
-    <Compile Include="Controllers\SeminarController.cs" />
+    <Compile Include="Controllers\MeController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
+    <Compile Include="JWT\JwtAuthHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712041427399_Initial.cs" />
+    <Compile Include="Migrations\201712041427399_Initial.Designer.cs">
+      <DependentUpon>201712041427399_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AcountViewModels.cs" />
+    <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\ClassGroup.cs" />
+    <Compile Include="Models\ClassTime.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\CourseClass.cs" />
+    <Compile Include="Models\CourseDetail.cs" />
+    <Compile Include="Models\CourseManagementSystemContext.cs" />
+    <Compile Include="Models\Group.cs" />
+    <Compile Include="Models\School.cs" />
+    <Compile Include="Models\Seminar.cs" />
+    <Compile Include="Models\SeminarClasses.cs" />
+    <Compile Include="Models\SeminarDetail.cs" />
+    <Compile Include="Models\SeminarGrade.cs" />
+    <Compile Include="Models\SeminarGradeDetail.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\StudentSeminar.cs" />
+    <Compile Include="Models\Teacher.cs" />
+    <Compile Include="Models\Topic.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AccountViewModel.cs" />
+    <Compile Include="ViewModels\ClassViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\SchoolViewModel.cs" />
+    <Compile Include="ViewModels\SiminarViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\CourseManagementSystem.mdf" />
@@ -215,47 +311,53 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CheckInfoUI.css" />
+    <Content Include="Content\CheckStudentInfo.css" />
+    <Content Include="Content\CheckTeacherInfo.css" />
     <Content Include="Content\ChooseCharacter.css" />
     <Content Include="Content\ClassManage.css" />
     <Content Include="Content\columns.css" />
-    <Content Include="Content\CourseInfoUI.css" />
     <Content Include="Content\CourseUI.css" />
     <Content Include="Content\CreateSchoolUI.css" />
-    <Content Include="Content\RollStartCallUI.css" />
+    <Content Include="Content\FixedRollStartCallUI.css" />
     <Content Include="Content\fixgroup.css" />
     <Content Include="Content\fixGroupChooseTopicUI2.css" />
     <Content Include="Content\font.css" />
     <Content Include="Content\forms.css" />
     <Content Include="Content\GradePresentationUI.css" />
     <Content Include="Content\GroupInfoUI2.css" />
+    <Content Include="Content\images\add.png" />
+    <Content Include="Content\images\background.jpg" />
+    <Content Include="Content\images\blueBoard.png" />
+    <Content Include="Content\images\bulb.png" />
+    <Content Include="Content\images\ClassManage.png" />
+    <Content Include="Content\images\clip.png" />
+    <Content Include="Content\images\clock.png" />
+    <Content Include="Content\images\date.png" />
     <Content Include="Content\images\deng.png" />
     <Content Include="Content\images\email.png" />
+    <Content Include="Content\images\FileIcon.png" />
     <Content Include="Content\images\head-background.jpg" />
+    <Content Include="Content\images\heart %282%29.png" />
+    <Content Include="Content\images\heart.png" />
     <Content Include="Content\images\heart_chosen.png" />
     <Content Include="Content\images\heart_empty.png" />
+    <Content Include="Content\images\HouseIcon.png" />
+    <Content Include="Content\images\line.png" />
+    <Content Include="Content\images\mail.png" />
+    <Content Include="Content\images\MailIcon.png" />
     <Content Include="Content\images\nine.png" />
+    <Content Include="Content\images\ninedot.png" />
+    <Content Include="Content\images\redCross.png" />
     <Content Include="Content\images\select.png" />
+    <Content Include="Content\images\site.png" />
     <Content Include="Content\images\smile.png" />
+    <Content Include="Content\images\teacher.png" />
     <Content Include="Content\images\user.png" />
     <Content Include="Content\images\user.svg" />
+    <Content Include="Content\images\UserIcon.png" />
+    <Content Include="Content\images\users 2.png" />
     <Content Include="Content\images\users.png" />
-    <Content Include="Content\images\九点.png" />
-    <Content Include="Content\images\加号.png" />
-    <Content Include="Content\images\地点.png" />
-    <Content Include="Content\images\提示.png" />
-    <Content Include="Content\images\文件资料.png" />
-    <Content Include="Content\images\日期.png" />
-    <Content Include="Content\images\clip.png" />
-    <Content Include="Content\images\灯.png" />
-    <Content Include="Content\images\灯.svg" />
-    <Content Include="Content\images\ClassManage.png" />
-    <Content Include="Content\images\红叉.png" />
-    <Content Include="Content\images\线.png" />
-    <Content Include="Content\images\老师.png" />
-    <Content Include="Content\images\背景图2.jpg" />
-    <Content Include="Content\images\蓝色板.png" />
-    <Content Include="Content\images\邮箱.png" />
-    <Content Include="Content\images\clock.png" />
+    <Content Include="Content\images\warning.png" />
     <Content Include="Content\layout.css" />
     <Content Include="Content\LoginUI.css" />
     <Content Include="Content\main.css" />
@@ -267,10 +369,12 @@
     <Content Include="Content\Seminar.css" />
     <Content Include="Content\StudentBindingUI.css" />
     <Content Include="Content\StudentBindingUI2.css" />
+    <Content Include="Content\StudentMainUI.css" />
     <Content Include="Content\StudentRollCallUI.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\TeacherBindingUI.css" />
     <Content Include="Content\TeacherBindingUI2.css" />
+    <Content Include="Content\TeacherMainUI.css" />
     <Content Include="Content\test.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -317,14 +421,14 @@
     <Content Include="Views\Class\RandomRollCallUI.cshtml" />
     <Content Include="Views\Class\RandomRollStartCallUI.cshtml" />
     <Content Include="Views\Class\RollCallListUI.cshtml" />
-    <None Include="Views\Home\CheckStudentInfoUI.cshtml" />
-    <None Include="Views\Home\CheckTeacherInfoUI .cshtml" />
-    <None Include="Views\Account\ChooseCharater.cshtml" />
+    <None Include="Views\Home\CheckStudentInfo.cshtml" />
+    <None Include="Views\Home\CheckTeacherInfo .cshtml" />
+    <None Include="Views\Account\ChooseCharacter.cshtml" />
     <None Include="Views\School\CreateSchoolUI.cshtml" />
-    <None Include="Views\Account\LoginUI.cshtml" />
-    <None Include="Views\Account\RegisterUI.cshtml" />
-    <None Include="Views\Account\StudentBindingUI.cshtml" />
-    <None Include="Views\Account\TeacherBindingUI.cshtml" />
+    <None Include="Views\Account\Login.cshtml" />
+    <None Include="Views\Account\Register.cshtml" />
+    <None Include="Views\Account\StudentBinding.cshtml" />
+    <None Include="Views\Account\TeacherBinding.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -335,14 +439,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\Teacher_MainUI.cshtml" />
-    <Content Include="Views\Home\Student_MainUI.cshtml" />
+    <Content Include="Views\Home\Teacher.cshtml" />
+    <Content Include="Views\Home\Student.cshtml" />
     <Content Include="Views\Seminar\SeminarFixedGroupNoSelection.cshtml" />
     <Content Include="Views\Seminar\SeminarRandomGroupNoSelection.cshtml" />
     <Content Include="Views\Seminar\Seminar.cshtml" />
     <Content Include="Views\Seminar\GradePresentationEndUI.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Seminar\GradePresentationUI.cshtml" />
     <Content Include="Views\Seminar\StudentRollCallUI.cshtml" />
     <Content Include="Views\Seminar\StudentRollCallEndUI.cshtml" />
@@ -354,7 +456,9 @@
     <Content Include="Views\Seminar\RandomGroupMemberUI.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
+    <EmbeddedResource Include="Migrations\201712041427399_Initial.resx">
+      <DependentUpon>201712041427399_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -362,6 +466,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
