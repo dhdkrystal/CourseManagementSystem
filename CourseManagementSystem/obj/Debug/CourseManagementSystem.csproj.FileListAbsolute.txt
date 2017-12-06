@@ -77,7 +77,6 @@ C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementS
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csprojResolveAssemblyReference.cache
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.dll
 C:\Users\dhd\OneDrive - stu.xmu.edu.cn\Visual Studio Workspace\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.pdb
