@@ -1,11 +1,18 @@
 ﻿<!doctype html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Untitled Document</title>
-	<link href="~/content/test.css" rel="stylesheet" type="text/css">
-	<!-- Bootstrap -->
-	<link href="file:///Macintosh HD/Users/mac/Documents/Unnamed Site 2/css/bootstrap.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="divport" content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0">
+    <title>StudentRollCallUI</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/Content/test.css"></link>
+
+
+
 </head>
 
 
@@ -21,25 +28,57 @@
 		<button class="button1" style="float: left;margin-left:3% ">福建</button>
 		<button class="button1" style="float: left;margin-left: 33%">厦门</button>
 		<button class="button1" style="float: left;margin-left: 63%">学校</button></div>
-		<div class="box7" >
-			<div class="box8"><button class="button2" style="">厦门大学</button></div>
-			<div class="box8"><button class="button2" style="">厦门大学嘉庚学院</button></div>
-			<div class="box8"><button class="button2" style="">集美大学</button></div>
-			<div class="box8"><button class="button2" style="">华侨大学</button></div>
-			<div class="box8"><button class="button2" style="">厦门理工学院</button></div>
-			<div class="box8"><button class="button2" style="">厦门南洋职业技术学院</button></div>
-			<div class="box8"><button class="button2" style="">厦门华夏职业学院</button></div>
-			<div class="box8"><button class="button2" style="">厦门海洋职业技术学院</button></div>
-			<div class="box8"><button class="button2" style="">厦门软件学院</button></div>
-			<div class="box8"><button class="button2" style="">厦门城市学院</button></div>
-			<div class="box8">
-				<a href="创建学校的链接">无学校？选择创建</a>
-		</div>
+		<div class="box7" id="list">
+            <script>
+                        $(document).ready(function () {
+                            $.ajax({
+                                type: 'GET',
+                                url: '/api/school2/32/detail',
+                                data: '',
+                                contentType: 'application/json;charset=utf-8',
+                                dataType: 'json',
+                                success: function (result) {
+                                    $.each(result.Data, function (i, value) {
+                                        $("#list").append(
+                                            '<div class="box8"><button class="button2" style="">' +
+                                            value + '</button ></div >')
+
+                                    });
+                                }
+                            })
+                        });
+            </script>
+            <div class="box9"><button class="box8">无学校？选择创建</button></div>
+            </div>
+    <script>
+        $(document).on("click", ".button2", function () {
+
+            $.ajax({
+                type: 'GET',
+                url: '/api/school1/32/detail',
+                data: "",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+                    $(window).attr("location", '/Account/StudentBinding');
+                }
+            })
+        })
+    </script>
+    <script>
+        $(document).on("click", ".box9", function () {
+
+            $.ajax({
+                type: 'GET',
+                url: '/api/school1/32/detail',
+                data: "",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+                    $(window).attr("location", '/School/CreateSchoolUI');
+                }
+            })
+        })
+</script>
 	</body>
-	
-
-
 	</html>
-
-
-

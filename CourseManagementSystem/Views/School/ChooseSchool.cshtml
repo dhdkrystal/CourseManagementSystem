@@ -1,97 +1,108 @@
-﻿<!doctype html>
-<html>
-<head>
-	<style>
-	ul
-	{
-		list-style-type:none;
-		margin:0;
-		padding:0;
-	}
-	li
-	{
-		float:left;
-	}
-	a:link,a:visited
-	{
-		display:block;
-		width:120px;
-		color:#0f0f0f;
-		background-color:#66CCFF;
-		text-align:center;
-		padding:14px;
-		text-decoration:none;
-		text-transform:uppercase;
-	}
-	a:hover,a:active
-	{
-		text-decoration: underline;
-	}
-	</style>
+﻿
+<!doctype html>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-	<meta charset="UTF-8">
-	<title>Untitled Document</title>
-	<link href="~/Content/test.css" rel="stylesheet" type="text/css">
-	<!-- Bootstrap -->
-	<link href="file:///Macintosh HD/Users/mac/Documents/Unnamed Site 2/css/bootstrap.css" rel="stylesheet">
+    li {
+        float: left;
+    }
+
+    a:link, a:visited {
+        display: block;
+        width: 120px;
+        color: #0f0f0f;
+        background-color: #66CCFF;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    a:hover, a:active {
+        text-decoration: underline;
+    }
+</style>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="divport" content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0">
+    <title>StudentRollCallUI</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/Content/test.css"></link>
+
+
+
 </head>
 
 <body style="background=#000000">
-	<div class="box5" style="position:relative;"><!-- 背景图的div -->
-		<div style="position:absolute;margin-left: 7%;margin-top: 18%; z-index:2"class="hrDiv"></div>
-		<img style="position:absolute;margin-left: 5%;margin-top: 9%" src="~/Content/images/deng.png" width=5% height=20%/> 
-		<img src="~/Content/images/背景图2.jpg" width=100% height=100%/>  
-		<div class="FONT41" style="position:absolute; margin-left:12%;z-index:2; top:10px">请选择您的学校</div> 
-	</div>
+            <div class="box5" style="position:relative;">
+                <!-- 背景图的div -->
+        <div style="position:absolute;margin-left: 7%;margin-top: 18%; z-index:2" class="hrDiv"></div>
+                <img style="position:absolute;margin-left: 5%;margin-top: 9%" src="~/Content/images/deng.png" width=5% height=20% />
+        <img src="~/Content/images/背景图2.jpg" width=100% height=100% />
+        <div class="FONT41" style="position:absolute; margin-left:12%;z-index:2; top:10px">请选择您的学校</div>
+            </div>
 
-	<div class="box6";style="background-color: =#66CCFF;">
-		<ul>
-			<li><a href="#">省份</a></li>
-			<li><a href="#">州市</a></li>
-			<li><a href="#">学校</a></li>
-		</ul>
-	</div>
+                <div class="box6" ;style="background-color: =#66CCFF;">
+                    <ul>
+                        <li><a href="#">省份</a></li>
+                        <li><a href="#">州市</a></li>
+                        <li><a href="#">学校</a></li>
+                    </ul>
+                </div>
 
-		<div class="box7" >
-			<div class="box8">
-				<button class="button2" style="">北京</button>
-			</div>
-			<div class="box8"><button class="button2" style="">天津</button></div>
-			<div class="box8"><button class="button2" style="">河北</button></div>
-			<div class="box8"><button class="button2" style="">山西</button></div>
-			<div class="box8"><button class="button2" style="">内蒙古</button></div>
-			<div class="box8"><button class="button2" style="">辽宁</button></div>
-			<div class="box8"><button class="button2" style="">吉林</button></div>
-			<div class="box8"><button class="button2" style="">黑龙江</button></div>
-			<div class="box8"><button class="button2" style="">上海</button></div>
-			<div class="box8"><button class="button2" style="">江苏</button></div>
-			<div class="box8"><button class="button2" style="">浙江</button></div>
-			<div class="box8"><button class="button2" style="">安徽</button></div>
-			<div class="box8"><button class="button2" style="">福建</button></div>
-			<div class="box8"><button class="button2" style="">江西</button></div>
-			<div class="box8"><button class="button2" style="">山东</button></div>
-			<div class="box8"><button class="button2" style="">河南</button></div>
-			<div class="box8"><button class="button2" style="">湖北</button></div>
-			<div class="box8"><button class="button2" style="">湖南</button></div>
-			<div class="box8"><button class="button2" style="">广东</button></div>
-			<div class="box8"><button class="button2" style="">广西</button></div>
-			<div class="box8"><button class="button2" style="">海南</button></div>
-			<div class="box8"><button class="button2" style="">重庆</button></div>
-			<div class="box8"><button class="button2" style="">四川</button></div>
-			<div class="box8"><button class="button2" style="">贵州</button></div>
-			<div class="box8"><button class="button2" style="">云南</button></div>
-			<div class="box8"><button class="button2" style="">西藏</button></div>
-			<div class="box8"><button class="button2" style="">山西</button></div>
-			<div class="box8"><button class="button2" style="">甘肃</button></div>
-			<div class="box8"><button class="button2" style="">青海</button></div>
-			<div class="box8"><button class="button2" style="">宁夏</button></div>
-			<div class="box8"><button class="button2" style="">新疆</button></div>
-			<div class="box8"><button class="button2" style="">台湾</button></div>
-			<div class="box8"><button class="button2" style="">香港</button></div>
-			<div class="box8"><button class="button2" style="">澳门</button></div>
-		</div>
-	</body>
-	</html>
+                <div class="box7"id="list" >
+                    <div class="box8"><button class="button2" style="">福建</button></div>
+                    <script>
+                        //GET /seminar/{seminarId}/group/my 按讨论课ID获取学生所在小组详情
+                        $(document).ready(function () {
+                            $.ajax({
+                                type: 'GET',
+                                url: '/api/school/32/detail',
+                                data: '',
+                                contentType: 'application/json;charset=utf-8',
+                                dataType: 'json',
+                                success: function (result) {
+                                    $.each(result.Data, function (i, value) {
+                                        $("#list").append(
+                                            '<div class="box8"><button class="button2" style="">' +
+                                            value + '</button ></div >')
+
+                                    });
+                                }
+                            })
+                        });
+                    </script>
+                </div>
+    <script>
+        $(document).on("click", ".button2", function () {
+            
+            $.ajax({
+                type: 'GET',
+                url: '/api/school/32/detail',
+                data: "",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+                        $(window).attr("location", '/School/ChooseSchool1');
+                }
+            })
+        })
+    </script>
+
+
+</body >
+</html >
 
 
 

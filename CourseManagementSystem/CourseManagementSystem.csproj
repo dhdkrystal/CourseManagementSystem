@@ -262,9 +262,15 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\courseController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\GroupApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MeController.cs" />
+    <Compile Include="Controllers\SchoolApiController.cs" />
+    <Compile Include="Controllers\SchoolController.cs" />
+    <Compile Include="Controllers\SeminarApiController.cs" />
+    <Compile Include="Controllers\SeminarController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="JWT\JwtAuthHandler.cs" />
     <Compile Include="Global.asax.cs">
@@ -358,6 +364,7 @@
     <Content Include="Content\images\users 2.png" />
     <Content Include="Content\images\users.png" />
     <Content Include="Content\images\warning.png" />
+    <Content Include="Content\images\九点.png" />
     <Content Include="Content\layout.css" />
     <Content Include="Content\LoginUI.css" />
     <Content Include="Content\main.css" />
@@ -399,16 +406,11 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Course\CourseInfoUI.cshtml" />
-    <Content Include="Views\Course\CourseUI.cshtml" />
     <Content Include="Views\Seminar\FixedGroupChooseTopicUI2.cshtml" />
     <Content Include="Views\Seminar\FixedGroupLeaderUI.cshtml" />
     <Content Include="Views\Seminar\FixedGroupLeaderUI2.cshtml" />
     <Content Include="Views\Seminar\FixedGroupMemberUI2.cshtml" />
     <Content Include="Views\Seminar\FixedGroupNoLeaderUI2.cshtml" />
-    <Content Include="Views\School\ChooseSchool.cshtml" />
-    <Content Include="Views\School\ChooseSchool1.cshtml" />
-    <Content Include="Views\School\ChooseSchool2.cshtml" />
     <Content Include="Views\Class\ClassManage.cshtml" />
     <Content Include="Views\Class\FixedEndRollCallUI.cshtml" />
     <Content Include="Views\Class\FixedGroupInfoUI.cshtml" />
@@ -421,14 +423,20 @@
     <Content Include="Views\Class\RandomRollCallUI.cshtml" />
     <Content Include="Views\Class\RandomRollStartCallUI.cshtml" />
     <Content Include="Views\Class\RollCallListUI.cshtml" />
+    <Content Include="Views\Course\CourseInfoUI.cshtml" />
+    <Content Include="Views\Course\CourseUI.cshtml" />
     <None Include="Views\Home\CheckStudentInfo.cshtml" />
     <None Include="Views\Home\CheckTeacherInfo .cshtml" />
     <None Include="Views\Account\ChooseCharacter.cshtml" />
-    <None Include="Views\School\CreateSchoolUI.cshtml" />
     <None Include="Views\Account\Login.cshtml" />
     <None Include="Views\Account\Register.cshtml" />
     <None Include="Views\Account\StudentBinding.cshtml" />
     <None Include="Views\Account\TeacherBinding.cshtml" />
+    <Content Include="Views\School\ChooseSchool.cshtml" />
+    <Content Include="Views\School\ChooseSchool1.cshtml" />
+    <Content Include="Views\School\ChooseSchool2.cshtml" />
+    <Content Include="Views\School\CreateSchoolUI.cshtml" />
+    <None Include="Views\Seminar\Seminar.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -443,7 +451,6 @@
     <Content Include="Views\Home\Student.cshtml" />
     <Content Include="Views\Seminar\SeminarFixedGroupNoSelection.cshtml" />
     <Content Include="Views\Seminar\SeminarRandomGroupNoSelection.cshtml" />
-    <Content Include="Views\Seminar\Seminar.cshtml" />
     <Content Include="Views\Seminar\GradePresentationEndUI.cshtml" />
     <Content Include="Views\Seminar\GradePresentationUI.cshtml" />
     <Content Include="Views\Seminar\StudentRollCallUI.cshtml" />
@@ -454,6 +461,7 @@
     <Content Include="Views\Seminar\RandomGroupLeaderUI.cshtml" />
     <Content Include="Views\Seminar\RandomGroupNoLeaderUI.cshtml" />
     <Content Include="Views\Seminar\RandomGroupMemberUI.cshtml" />
+    <Content Include="Views\Seminar\RandomGroupLeaderUI2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201712041427399_Initial.resx">
