@@ -21,7 +21,7 @@ body {
     width: 30em;
     height: 30em;
     float: left;
-    padding-top: 7em;
+    padding-top: 10%;
     padding-left: 10%;
 }
 
@@ -47,10 +47,11 @@ body {
 .studentSumDiv {
     font-size: 3.5em;
     width: 46.6%;
-    height: 4em;
+    height: 6%;
     float: left;
     margin-left: 0.66%;
-    margin-top: 1em;
+    font-weight: bold;
+    padding-top: 4%;
     padding-left: 5.3%;
 }
 
@@ -64,7 +65,7 @@ body {
     color: black;
     float: right;
     margin-right: 10%;
-    margin-top: 1em;
+    margin-top: 7.5%;
 }
 
 .lowBox{

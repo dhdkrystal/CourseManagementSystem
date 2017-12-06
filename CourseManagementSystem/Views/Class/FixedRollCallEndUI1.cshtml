@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="divport" content="width=device-width,
                                      initial-scale=1.0,
-                                     maximum-scale=1.0"
-    >
-    <title>RollCallListUI</title>
+                                     maximum-scale=1.0">
+    <title>RollCallList</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="~/Content/RollCallListUI.css"></link>
-
+    <!--设置信息折叠展开-->
+    <script>
+        function isHidden(oDiv) {
+            var vDiv = document.getElementById(oDiv);
+            vDiv.style.display=(vDiv.style.display=='none')?'block':'none';
+        }
+    </script>
 
 </head>
 <body>
 <!--设置左上角的蓝色板-->
 <div class="blueBoardDiv">
-    <img src="~/Content/images/蓝色板.png" class='blueBoardIcon'/>
+    <img src="~/Content/images/blueBoard.png" class='blueBoardIcon'/>
 </div>
 
 
@@ -33,50 +36,48 @@
 
 
 <!--学生名单上面那个蓝色的bar-->
-<div class='studentListBarDiv'>
-    已签到人员
+<div class='studentListBarDiv' onclick="isHidden('List1')">
+   <span class="barText">已签到学生</span> 
 </div>
 
 <!--学生块，分为左边的和右边的，增加学生的时候选择好左边或者
 右边后直接复制就好，之后在span下面修改学生名字-->
-<div class='studentLeftBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">杨xx</span>
-</div>
-
-<div class='studentRightBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">周xx</span>
-</div>
-
-<div class='studentLeftBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">孙xx</span>
-</div>
-
+    <div id="List1">
+        <div class='studentLeftBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">杨xx</span>
+        </div>
+        <div class='studentRightBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">周xx</span>
+        </div>
+        <div class='studentLeftBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">孙xx</span>
+        </div>
+    </div>
 
 <!--学生名单上面那个蓝色的bar-->
-<div class='studentListBarDiv'>
-    未签到人员
+<div class='studentListBarDiv' onclick="isHidden('List2')">
+    <span class="barText ">未签到学生</span>
 </div>
-<div class='studentLeftBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">王xx</span>
-</div>
-
-<div class='studentRightBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">马xx</span>
-</div>
-
-<div class='studentLeftBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">钱xx</span>
-</div>
-
-<div class='studentRightBlock'>
-    <img src="~/Content/images/user.png" class='userIcon'/>
-    <span class="studentName">魏xx</span>
-</div>
+    <div id="List2">
+        <div class='studentLeftBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">王xx</span>
+        </div>
+        <div class='studentRightBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">马xx</span>
+        </div>
+        <div class='studentLeftBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">钱xx</span>
+        </div>
+        <div class='studentRightBlock'>
+            <img src="~/Content/images/user.png" class='userIcon' />
+            <span class="studentName">魏xx</span>
+        </div>
+    </div>
 </body>
 </html>
