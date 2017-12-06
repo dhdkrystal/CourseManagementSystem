@@ -19,10 +19,11 @@ namespace CourseManagementSystem.Controllers
         // GET: Course
         [Route("Course")]
         [HttpGet]
-        public IQueryable<Course> GetCourses()
+        public List<CourseListInfoModel> GetCourses()
         {
+            return new List<CourseListInfoModel> { new CourseListInfoModel { Id=1, Name="OOAD", NumClass=6}, new CourseListInfoModel { Id = 2, Name = "JavaEE", NumClass = 4 }, new CourseListInfoModel { Id = 3, Name = "Network", NumClass = 3 } };
             //using CourseListInfoModel
-            return db.Courses;
+            //return db.Courses;  
         }
 
         // GET: Course/5

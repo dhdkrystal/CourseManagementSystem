@@ -262,7 +262,7 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ClassController.cs" />
+    <Compile Include="Controllers\ClassesController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MeController.cs" />
@@ -367,7 +367,6 @@
     <Content Include="Content\Register.css" />
     <Content Include="Content\RegisterUI.css" />
     <Content Include="Content\RollCallListUI.css" />
-    <Content Include="Content\RollStartCallUI.css" />
     <Content Include="Content\Seminar.css" />
     <Content Include="Content\StudentBindingUI.css" />
     <Content Include="Content\StudentBindingUI2.css" />
@@ -424,7 +423,7 @@
     <Content Include="Views\Class\RandomRollStartCallUI.cshtml" />
     <Content Include="Views\Class\RollCallListUI.cshtml" />
     <None Include="Views\Home\CheckStudentInfo.cshtml" />
-    <None Include="Views\Home\CheckTeacherInfo .cshtml" />
+    <None Include="Views\Home\CheckTeacherInfo.cshtml" />
     <None Include="Views\Account\ChooseCharacter.cshtml" />
     <None Include="Views\School\CreateSchoolUI.cshtml" />
     <None Include="Views\Account\Login.cshtml" />

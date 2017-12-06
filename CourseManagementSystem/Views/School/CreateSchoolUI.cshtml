@@ -1,17 +1,25 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Untitled Document</title>
-    <link href="CreateSchoolUI.css" rel="stylesheet" type="text/css">
-    <!-- Bootstrap -->
+    <meta name="divport" content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0">
+    <title>CreateSchoolUI</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/Content/CreateSchoolUI.css"></link>
+
+
+
 </head>
 
 <body>
     <div class="topBoardView" >
         <!-- 背景图的div -->
-        <img  width="100%" height="250px" src="head-background.jpg" position="absolute">
-        <img class="topLight" src="灯.svg">
+        <img  width="100%" height="250px" src="~/Content/images/head-background.jpg" position="absolute">
+        <img class="topLight" src="~/Content/images/deng.png">
 		<div class="topTips">创建学校</div>
 		<div class="topLine"/>
         
@@ -19,12 +27,25 @@
  <div class="mainView">
 	<div class="schoolName">学校名：</div>
 	<div class="inputSchool"></div>
-    <button class="confirmButton">创建</button>
+
+    <div class="box8"><button class="confirmButton">创建</button>
  </div>  
- 
+    <script>
+            $(document).on("click", ".box8", function () {
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/school/"厦门人民公园"',
+                    data: "",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (result) {
+                        alert("创建成功,新学校ID为44");
+                        $(window).attr("location", '/Account/StudentBinding');
+                    }
+                })
+            })
+    </script>
 	
 </body>
 </html>
-
-
-

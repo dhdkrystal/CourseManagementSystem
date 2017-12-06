@@ -13,41 +13,59 @@
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <link href="~/Content/StudentMainUI.css" rel="stylesheet" type="text/css">
+
 </head>
+
 <body class="body">
     <div class="PictureDiv">
         <!-- 背景图的div -->
         <img class="user" src="~/Content/images/user.png" />
         <img src="~/Content/images/background.jpg" class="Picture" />
-        <div class="name">姓名：邱明</div>
-        <div class="studentID">学号：243201522xxxx</div>
+        <div class="name" id="name">姓名：</div>
+        <div class="studentID" id="number">学号：</div>
     </div>
+    <div class="lowBox"id="course_container">
+        <script>
+            $(document).ready(function () {
+                $.ajax({
+                    url: '/me',
+                    type: 'GET',
+                    success: function (data) {
+                        $('#name').append(data.Name);
+                        $('#number').append(data.Phone);
+                    },
+                    error: function (data) {
+                        alert("加载学生信息出错");
+                    }
+                })
 
-    <!--细线，hr不好设置css，用一个高度很小的div来代替-->
-    <div class="hrDiv"></div>
+                $.ajax({
+                    url: '/course',
+                    type: 'GET',
+                    success: function (data) {
+                        for (i = 0; i < data.length; i++) {
+                            var course = data[i];
+                            template = "<div class=\"blueBox\">\n";
+                            template += "<p class=\"leftText\">";
+                            template += course.Name;
+                            template += "</p>\n<p class=\"rightText\">老师：";
+                            template += course.Id;
+                            template += "</p></div >";
+                            $('#course_container').append(template);
+                        }
 
-    <div class="blueBox">
-        <p class="leftText"> J2EE</p>
-        <p class="rightText"> 老师：邱明</p>
-    </div>
-    <div class="blueBox">
-        <p class="leftText"> J2EE</p>
-        <p class="rightText"> 老师：邱明</p>
-    </div>
-    <div class="greyBox">
-        <p class="leftText"> J2EE</p>
-        <p class="rightText"> 老师：邱明</p>
-    </div>
-    <div class="blueBox">
-        <p class="leftText"> J2EE</p>
-        <p class="rightText"> 老师：邱明</p>
+                    },
+                    error: function (data) {
+                        alert("加载课程信息出错");
+                    }
+                })
+            });
+        </script>
     </div>
 </body>
+
+
 </html>
-
-
-
-
 
 
 
