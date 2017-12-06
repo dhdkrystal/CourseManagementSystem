@@ -11,26 +11,40 @@
 
 <body>
     <div class="box5">
-        <!-- ����ͼ��div -->
         <img style="position:absolute;margin-left: 12%;margin-top: 10%" src="~/Content/images/user.svg" width=100 height=100 />
         <img src="~/Content/images/head-background.jpg" width="100%">
-        <div class="FONT4" style="position:absolute; z-index:2; top:20px">����������</div>
-        <div class="FONT4" style="position:absolute; z-index:2; top:60px">ѧ�ţ�24321432534</div>
+        <div class="FONT4" style="position:absolute; z-index:2; top:20px" id="name"></div>
+        <div class="FONT4" style="position:absolute; z-index:2; top:60px" id="number"></div>
     </div>
     <div class="mainView">
-        <div class="phone1">�ֻ��ţ�</div>
-        <div class="ID1">�̹��ţ�</div>
-        <div class="school1">ѧУ��</div>
-        <div class="name1">������</div>
-        <div class="phone">18159215806</div>
-        <div class="ID">24321432534</div>
-        <div class="school">���Ŵ�ѧ</div>
-        <div class="name">����</div>
-
-        <button class="exitButton">�˳���¼</button>
-        <button class="unbindingButton">����˺�</button>
+        <div class="phone1" id="phone"></div>
+        <div class="ID1" id="number1"></div>
+        <div class="school1" id="school"></div>
+        <div class="name1" id="name1"></div>
+        <button class="exitButton" id="signout">退出登录</button>
+        <button class="unbindingButton" id="unbind">解绑账号</button>
     </div>
 </body>
 </html>
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: '/me',
+            type: 'GET',
+            success: function (data) {
+                $('#name').append(data.Name);
+                $('#name1').append(data.Name);
+                $('#number').append(data.Number);
+                $('#number1').append(data.Number);
+                $('#phone').append(data.Phone);
+                $('#school').append(data.School);
+            },
+            error: function (data) {
+                alert("加载学生信息出错");
+            }
+        })
+    });
+</script>
 
 

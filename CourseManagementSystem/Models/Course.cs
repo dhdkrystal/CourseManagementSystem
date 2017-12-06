@@ -21,14 +21,10 @@ namespace CourseManagementSystem.Models
     public class Proportions
     {
         public int Id { get; set; }
-        public int report { get; set; }
-        public Presentation presentation { get; set; }
-    }
-    public class Presentation
-    {
-        public int Id { get; set; }
         public int a { get; set; }
         public int b { get; set; }
         public int c { get; set; }
+        public int report { get; set; }
+        public int presentation { get; set; }
     }
 }

@@ -14,34 +14,55 @@
 </head>
 
 <body>
-    <div class="box5">
+    <div class="box5" onclick="location.href='CheckStudentInfo'">
         <!-- 背景图的div -->
         <img style="position:absolute;margin-left: 12%;margin-top: 10%" src="~/Content/images/user.svg" width=100 height=100 />
         <img src="~/Content/images/head-background.jpg" width="100%" >
-        <div class="FONT4" style="position:absolute; z-index:2; top:20px">姓名：邱明</div>
-        <div class="FONT4" style="position:absolute; z-index:2; top:60px">学号：24321432534</div>
+        <div class="FONT4" style="position:absolute; z-index:2; top:20px" id="name">姓名：</div>
+        <div class="FONT4" style="position:absolute; z-index:2; top:60px" id="number">学号：</div>
     </div>
-
-    <div class="box3">
-        <p class="FONT11">J2EE</p>
-        <p class="FONT51">老师：邱明</p>
-    </div>
-    <div class="box3">
-        <p class="FONT11">J2EE</p>
-        <p class="FONT51">老师：邱明</p>
-    </div>
-    <div class="box3">
-        <p class="FONT11">J2EE</p>
-        <p class="FONT51">老师：邱明</p>
-    </div>
-    <div class="box3">
-        <p class="FONT11">J2EE</p>
-        <p class="FONT51">老师：邱明</p>
+    <div id="course_container">
+        
     </div>
 </body>
 
 
 </html>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: '/me',
+            type: 'GET',
+            success: function (data) {
+                $('#name').append(data.Name);
+                $('#number').append(data.Phone);
+            }, 
+            error: function (data) {
+                alert("加载学生信息出错");
+            }
+        })
 
+        $.ajax({
+            url: '/course',
+            type: 'GET',
+            success: function (data) {
+                for (i = 0; i < data.length; i++) {
+                    var course = data[i];
+                    template = "<div class=\"box3\">\n";
+                    template += "<p class=\"FONT11\">";
+                    template += course.Name;
+                    template += "</p>\n<p class=\"FONT51\">老师：";
+                    template += course.Id;
+                    template += "</p></div >";
+                    $('#course_container').append(template);
+                }
+                
+            }, 
+            error: function (data) {
+                alert("加载课程信息出错");
+            }
+        })
+    });
+</script>
 
 

@@ -437,3 +437,4 @@ C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Sy
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\System.Web.Http.Owin.xml
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\Thinktecture.IdentityModel.Core.pdb
 C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\bin\JWT.dll
+C:\Users\lihen\Source\Repos\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csprojResolveAssemblyReference.cache
