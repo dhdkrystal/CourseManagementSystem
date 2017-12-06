@@ -1,11 +1,18 @@
 ﻿<!doctype html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Untitled Document</title>
-	<link href="~/Content/test.css" rel="stylesheet" type="text/css">
-	<!-- Bootstrap -->
-	<link href="file:///Macintosh HD/Users/mac/Documents/Unnamed Site 2/css/bootstrap.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="divport" content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0">
+    <title>StudentRollCallUI</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/Content/test.css"></link>
+
+
+
 </head>
 
 <body style="background=#000000">
@@ -21,17 +28,45 @@
 		<button class="button1" style="float: left;margin-left:3% ">福建</button>
 		<button class="button1" style="float: left;margin-left: 33%">州市</button>
 		<button class="button1" style="float: left;margin-left: 63%">学校</button></div>
-		<div class="box7" >
-			<div class="box8"><button class="button2" style="">福州</button></div>
-			<div class="box8"><button class="button2" style="">厦门</button></div>
-			<div class="box8"><button class="button2" style="">莆田</button></div>
-			<div class="box8"><button class="button2" style="">三明</button></div>
-			<div class="box8"><button class="button2" style="">泉州</button></div>
-			<div class="box8"><button class="button2" style="">漳州</button></div>
-			<div class="box8"><button class="button2" style="">南平</button></div>
-			<div class="box8"><button class="button2" style="">龙岩</button></div>
-			<div class="box8"><button class="button2" style="">宁德</button></div>
-		</div>
+
+    <div class="box7" id="list">
+        <script>
+                        //GET /seminar/{seminarId}/group/my 按讨论课ID获取学生所在小组详情
+                        $(document).ready(function () {
+                            $.ajax({
+                                type: 'GET',
+                                url: '/api/school1/32/detail',
+                                data: '',
+                                contentType: 'application/json;charset=utf-8',
+                                dataType: 'json',
+                                success: function (result) {
+                                    $.each(result.Data, function (i, value) {
+                                        $("#list").append(
+                                            '<div class="box8"><button class="button2" style="">' +
+                                            value + '</button ></div >')
+
+                                    });
+                                }
+                            })
+                        });
+        </script>
+    </div>
+    <script>
+        $(document).on("click", ".button2", function () {
+
+            $.ajax({
+                type: 'GET',
+                url: '/api/school1/32/detail',
+                data: "",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+                    $(window).attr("location", '/School/ChooseSchool2');
+                }
+            })
+        })
+    </script>
+
 	</body>
 	
 

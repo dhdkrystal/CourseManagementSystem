@@ -20,6 +20,41 @@
 
 </head>
 <body>
+    <script>
+        //GET /seminar/{seminarId}/detail 获取讨论课详情
+        $(document).ready(function () {
+            $.ajax({
+                type: 'GET',
+                url: '/api/seminar/32/detail',
+                data: '',
+                contentType: 'application/json;charset=utf-8',
+                dataType: 'json',
+                success: function (result) {
+                    $("#teacherName").text(result.Data.teacherName);
+                    $("#teacherEmail").text(result.Data.teacherEmail);
+                    $("#startTime").text(result.Data.startTime);
+                    $("#site").text(result.Data.site);
+                }
+            })
+        });
+
+        //PUT /seminar/{seminarId}/class/{classId}/attendance/{studentId} 请求数据：GPS位置
+        $(document).on("click", ".blueBigBtn", function () {
+            $.ajax({
+                type: 'PUT',
+                url: '/api/seminar/32/class/1/attendance/8888',
+                data:'',
+                contentType: 'application/json;charset=utf-8',
+                dataType: 'json',
+                success: function (result) {
+                    if(result.Data.status=="late") 
+                        $(window).attr("location", '/Seminar/StudentRollCallLateUI');
+                    else
+                        $(window).attr("location", '/Seminar/StudentRollCallEndUI');
+                }
+            })
+        })
+    </script>
     <!--设置左上角的blueBoardIcon-->
     <div class="blueUsersDiv">
         <img src="~/Content/images/蓝色板.png" class='blueUsersIcon' />
@@ -33,23 +68,23 @@
     <!--课堂信息，由一个icon和一行文字组成-->
     <div class="courseInfoDiv">
         <img src="~/Content/images/老师.png" class='courseInfoIcon' />
-        <strong>邱明</strong>
+        <strong id="teacherName"></strong>
     </div>
     <div class="courseInfoDiv">
         <img src="~/Content/images/邮箱.png" class='courseInfoIcon' />
-        <strong>mingqiu@gmail.com</strong>
+        <strong id="teacherEmail"></strong>
     </div>
     <div class="courseInfoDiv">
         <img src="~/Content/images/日期.png" class='courseInfoIcon' />
-        <strong>2017-11-11</strong>
+        <strong id="startTime"></strong>
     </div>
     <div class="courseInfoDiv">
         <img src="~/Content/images/地点.png" class='courseInfoIcon' />
-        <strong>海韵教学楼201</strong>
+        <strong id="site"></strong>
     </div>
 
     <div>
-        <button type="button" class="blueBigBtn">
+        <button type="button" class="blueBigBtn" id="rollCall">
             签到
         </button>
     </div>

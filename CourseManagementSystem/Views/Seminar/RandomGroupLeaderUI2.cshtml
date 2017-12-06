@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>FixedGroupLeaderUI</title>
+    <title>RandomGroupLeaderUI2</title>
     <link rel="stylesheet" href="~/Content/fixgroup.css"></link>
    	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -22,7 +22,6 @@
                 success: function (result) {
                     $("#name").text(result.Data.leader.name);
                     $("#name").append('<br/>' + result.Data.leader.id);
-                    $("#choosetopic").append(result.Data.topics.name);
                     $.each(result.Data.members, function (i, value) {
                         $("#members").append('<div class="block">' +
                             '<div class="panel-body">' +
@@ -36,12 +35,37 @@
                 }
             })
         });
-        
+        $(document).on("click", ".btnleader", function () {
+            $.ajax({
+                type: 'POST',
+                url: '/api/group/23/topic',
+                data: '',
+                contentType: 'application/json;charset=utf-8',
+                dataType: 'json',
+                success: function (result) {
+                        $(window).attr("location", '/Seminar/RandomGroupChooseTopicUI2');
+                    
+                }
+            })
+        });
+        $(document).on("click", ".btnquit", function () {
+            $.ajax({
+                type: 'PUT',
+                url: '/api/group/23/resign',
+                data: '',
+                contentType: 'application/json;charset=utf-8',
+                dataType: 'json',
+                success: function (result) {
+                    $(window).attr("location", '/Seminar/RandomGroupNoLeaderUI');
+
+                }
+            })
+        });
     </script>
     <div class="seminarblock">  
     	<div class="panel-body">	
 			<div class="column0"><img src="~/Content/images/users.png"></img></div>
-    		<div class="column2">讨论课<br/>固定分组</div>
+    		<div class="column2">讨论课<br/>随机分组</div>
          </div>
     </div>
     
@@ -52,6 +76,7 @@
         </div>
     </div>
 
+    
     <ol id="members">
         <div class="block">
             <div class="panel-body">
@@ -62,12 +87,10 @@
         </div>
         <!--每有一个成员复制一个-->
     </ol>
-    
 
-     <div class="whitetitle">  
-        <div class="panel-body">
-            <div id="choosetopic">选题：</div>
-        </div>
+    <div class="middlediv">
+    <button type="button" class="btnleader">选题</button>
     </div>
+    
 </body>
 </html>
