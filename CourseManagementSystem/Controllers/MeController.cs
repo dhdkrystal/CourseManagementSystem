@@ -29,7 +29,7 @@ namespace CourseManagementSystem.Controllers
 
         [Route("me")]
         [HttpPut]
-        public IHttpActionResult ChooseCharacter()
+        public IHttpActionResult ChooseCharacter(string type)
         {
             return StatusCode(HttpStatusCode.NoContent);
 

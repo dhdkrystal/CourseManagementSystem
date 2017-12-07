@@ -19,7 +19,6 @@
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_DbContextDialogWidth>600</WebStackScaffolding_DbContextDialogWidth>
     <WebStackScaffolding_DbContextTypeFullName>CourseManagementSystem.Models.CourseManagementSystemContext</WebStackScaffolding_DbContextTypeFullName>
-    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

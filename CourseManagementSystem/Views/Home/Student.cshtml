@@ -9,7 +9,7 @@
     <meta name="divport" content="width=device-width,
                                      initial-scale=1.0,
                                      maximum-scale=1.0">
-    <title>Untitled Document</title>
+    <title>Student</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <link href="~/Content/StudentMainUI.css" rel="stylesheet" type="text/css">
@@ -45,7 +45,7 @@
                     success: function (data) {
                         for (i = 0; i < data.length; i++) {
                             var course = data[i];
-                            template = "<div class=\"blueBox\">\n";
+                            template = "<div class=\"blueBox\" onclick=\"location.href = '/Course/CourseUI'\">\n";
                             template += "<p class=\"leftText\">";
                             template += course.Name;
                             template += "</p>\n<p class=\"rightText\">老师：";
