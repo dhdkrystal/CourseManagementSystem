@@ -14,9 +14,15 @@
             $("#ClassImage").click(function () {
                 var GroupType = "@ViewBag.GroupType";
                 if (GroupType == "固定分组")
-                    window.location('/Class/FixedRollStartCallUI');
+                    window.location('/Class/FixedRollStartCall');
                 else
-                    window.location('/Class/RandomRollStartCallUI');
+                    window.location('/Class/RandomRollStartCall');
+            });
+            $("#ClassImage2").click(function () {
+                window.location('/Class/RandomRollStartCall');
+            });
+            $("#ClassImage3").click(function () {
+                window.location('/Class/FixedRollStartCall');
             });
         })
     </script>
@@ -48,15 +54,13 @@
 </div>
 
 <div class="class">
-    <a href="@Url.Action("Class","Class")">
-        <img src="~/Content/images/ClassManage.png" class="classIcon">
-    </a>
+        <img src="~/Content/images/ClassManage.png" class="classIcon" id="ClassImage2">
         <p class="className">班级2</p>
     
 </div>
 
 <div class="class">
-    <img src="~/Content/images/ClassManage.png" class="classIcon">
+    <img src="~/Content/images/ClassManage.png" class="classIcon" id="ClassImage3">
     <p class="className">班级3</p>
 </div>
 

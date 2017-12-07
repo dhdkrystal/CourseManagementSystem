@@ -15,81 +15,81 @@ namespace CourseManagementSystem.Controllers
             ViewBag.CourseName = "OOAD";
             ViewBag.SeminarName = "讨论课4";
             ViewBag.Time = "11月6日-11月12日";
-            ViewBag.GroupType = "随机分组";
+            ViewBag.GroupType = "固定分组";
             return View();
         }
 
         public ActionResult Class(string GroupType)
         {
             if (GroupType == "随机分组")
-                Response.Redirect("RandomRollStartCallUI");
+                Response.Redirect("RandomRollStartCall");
             else
-                Response.Redirect("FixedRollStartCallUI");
+                Response.Redirect("FixedRollStartCall");
             return View();
         }
-        public ActionResult FixedRollStartCallUI()
+        public ActionResult FixedRollStartCall()
         {
             return View();
         }
         public ActionResult CheckGroup()
         {
-            Response.Redirect("FixedGroupInfoUI");
+            Response.Redirect("FixedGroupInfo");
             return View();
         }
-        public ActionResult FixedGroupInfoUI()
+        public ActionResult FixedGroupInfo()
         {
             return View();
         }
         public ActionResult Start()
         {
-            Response.Redirect("FixedRollCallUI");
+            Response.Redirect("FixedRollCall");
             return View();
         }
 
-        public ActionResult FixedRollCallUI()
+        public ActionResult FixedRollCall()
         {
             return View();
         }
         public ActionResult CheckListTmp()
         {
-            Response.Redirect("RollCallListUI");
+            Response.Redirect("RollCallList");
             return View();
         }
-        public ActionResult RollCallListUI()
+        public ActionResult RollCallList()
         {
             return View();
         }
         public ActionResult End()
         {
-            Response.Redirect("FixedEndRollCallUI");
+            Response.Redirect("FixedEndRollCall");
             return View();
         }
-        public ActionResult FixedEndRollCallUI()
+        public ActionResult FixedEndRollCall()
         {
             return View();
         }
         public ActionResult CheckList()
         {
-            Response.Redirect("FixedRollCallEndUI1");
+            Response.Redirect("FixedRollCallEnd");
             return View();
         }
-        public ActionResult FixedRollCallEndUI1()
+        public ActionResult FixedRollCallEnd()
         {
             return View();
         }
-        public ActionResult GroupInfoUI()
+        public ActionResult GroupInfo()
         {
             return View();
         }
-        public ActionResult RandomRollStartCallUI()
+        public ActionResult RandomRollStartCall()
         {
             return View();
         }
-        public ActionResult RandomEndRollCallUI()
+        public ActionResult RandomEndRollCall()
         {
             return View();
         }
-        public ActionResult RandomRollCallUI()
+        public ActionResult RandomRollCall()
         {
             return View();
         }
